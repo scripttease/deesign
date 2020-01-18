@@ -1,0 +1,162 @@
+:root{
+  /* Constants */
+
+  /* Colours */
+  --color-white: #fff;
+  --color-black: #373b40;
+  --color-light-black: lighten(--color-black, 7);
+  --color-grey: #979797;
+  --color-light-grey: #c8cfd6;
+  --color-purple: #a966dc;
+  --color-green: #02baac;
+  --color-pale-green: #81ddd6;
+  --color-blue: #1fb6ff;
+  --color-orangered: #f95849;
+
+  --color-faint-blue: #f0f5fb;
+  --color-faint-grey: #f3f6f9;
+
+  /* Timings */
+  --hover-transition-time: 0.1s;
+  --two-times-hover-transition-time: 0.2s;
+
+  /* Sizes */
+  --font-size: 17px;
+  --font-size-minus-three: 14px;
+  --bar-height: 64px;
+  --zero-minus-bar-height: -64px;
+  --page-padding: 14px;
+  --half-page-padding: 7px;
+  --page-padding-extra: 15px;
+  --four-times-page-padding: 56px;
+
+  /* Media queries */
+  --screen-small: 570px;
+  --screen-medium: 768px;
+  --screen-large: 960px;
+  --screen-small-minus-sidebar-width: 506px;
+
+  /* Misc */
+  --shadow: 0px 2px 5px 0 --color-light-grey;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: $color-background;
+  font-family: "Work Sans", sans-serif;
+  font-size: $font-size;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+*:visited {
+  text-decoration: none;
+  color: $color-link;
+}
+
+a:not(.disabled) {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+  break-after: avoid-page;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullet-list {
+  list-style: initial;
+  padding-left: 1.2em;
+  margin: initial;
+}
+
+.page {
+  padding: $page-padding ($page-padding * 2);
+  padding-bottom: $page-padding * 5;
+  min-height: 70vh;
+}
+
+.page > h1:first-child {
+  margin-top: 0;
+}
+
+.met-x-light p {
+  font-family: "MetropolisExtraLight", sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  letter-spacing: 1rem;
+}
+
+.met-light p {
+  font-family: "MetropolisLight", sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  letter-spacing: 1rem;
+}
+
+.met-thin p {
+  font-family: "MetropolisThin", sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  letter-spacing: 1rem;
+} 
+
+.met-reg p {
+  font-family: "MetropolisRegular", sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  letter-spacing: 1rem;
+} 
+
+.arvo-reg p {
+  font-family: "ArvoRegular", serif;
+  font-size: x-large;
+} 
+
+
+.arvo-bold p {
+  font-family: "ArvoBold", serif;
+  font-size: 5.5rem;
+  margin-left: 3.2rem;
+  color: #424040;
+  margin-bottom: 1rem;
+} 
+
+.logo-text p {
+  font-family: "ArvoBold", serif;
+  font-size: 5.5rem;
+  margin-left: 3.2rem;
+  color: #424040;
+  margin-bottom: 1rem;
+}
+
+.slogan-text p {
+  font-family: "MetropolisExtraLight", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 1.05rem;
+    color: #F07F61;
+}
+
+.slogan-text-two p {
+  font-family: "MetropolisRegular", sans-serif;
+  text-transform: uppercase;
+  font-size: x-large;
+  letter-spacing: 1rem;
+  color:#F07F61;
+}
