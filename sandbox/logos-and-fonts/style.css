@@ -136,6 +136,7 @@ ul {
   margin-bottom: 1rem;
 } 
 
+/* This is closest */
 .logo-text p {
   font-family: "ArvoBold", serif;
   font-size: 5.5rem;
@@ -144,6 +145,7 @@ ul {
   margin-bottom: 1rem;
 }
 
+/* This is closest */
 .slogan-text p {
   font-family: "MetropolisExtraLight", sans-serif;
     text-transform: uppercase;

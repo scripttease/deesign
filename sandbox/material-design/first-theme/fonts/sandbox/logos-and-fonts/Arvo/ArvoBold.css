@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ArvoBold';
+    src: url('fonts/ArvoBold.eot');
+    src: url('fonts/ArvoBold.eot') format('embedded-opentype'),
+         url('fonts/ArvoBold.woff2') format('woff2'),
+         url('fonts/ArvoBold.woff') format('woff'),
+         url('fonts/ArvoBold.ttf') format('truetype'),
+         url('fonts/ArvoBold.svg#ArvoBold') format('svg');
+}
