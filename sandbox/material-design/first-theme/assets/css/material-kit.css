@@ -16,11 +16,34 @@
 /*     brand Colors              */
 
 :root {
+  --color-one: #f86624;    /* rgb(248,102,36) */
   --color-orange: #f86624;    /* rgb(248,102,36) */
+  --color-primary: #f86624;    /* rgb(248,102,36) */
+  --color-primary-dark: #d0490d;    /* rgb(248,102,36) */
+
+  --color-two: #F9C80E;    /* rgb(249,200,14) */
   --color-yellow: #F9C80E;    /* rgb(249,200,14) */
+  --color-complimentary: #F9C80E;    /* rgb(249,200,14) */
+
+  --color-three: #ff5a5f;      /* rgb(255,90,95) */
   --color-pink: #ff5a5f;      /* rgb(255,90,95) */
+  --color-highlight: #ff5a5f;      /* rgb(255,90,95) */
+  --color-highlight-dark: #cc3438;      /* rgb(255,90,95) */
+  
+  --color-four: #662e9b;    /* rgb(102,46,155) */
   --color-purple: #662e9b;    /* rgb(102,46,155) */
+  --color-four-dark: #7e099e;
+  --color-ccontrast: #662e9b;    /* rgb(102,46,155) */
+  --color-ccontrast-dark: #662e9b;    /* rgb(102,46,155) */
+
+  --color-five: #43bccd;      /* rgb(67,188,205) */
+  --color-five-trans:  rgba(67,188,205,0.2);
   --color-blue: #43bccd;      /* rgb(67,188,205) */
+  --color-contrast: #43bccd;      /* rgb(67,188,205) */
+
+  --color-dark #424040;
+
+  --color-light #ffffff;
 }
 
 /* branding */
@@ -42,6 +65,22 @@
     letter-spacing: 1.05rem;
     color: #F07F61;
 }
+
+/* SVG hiding for clearer html */
+.defs-only {
+  display: none;
+}
+
+/* SVG colours */
+#SvgIcon {
+  fill: var(--color-primary)
+}
+
+#SvgIconPath {
+  fill: var(--color-primary)
+}
+
+/* ----- */
 
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
@@ -97,8 +136,8 @@ body {
   color: #212529;
   text-align: left;
   /* background-color: #fafafa; */
-  background-color: var(--color-blue) ;
-  background-color: var(--color-blue) ;
+  /* background-color: var(--color-blue) ; */
+  background-color: var(--color-five-trans) ;
 
 }
 
@@ -10948,7 +10987,7 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 
 body {
   background-color: #eee;
-  color: #3C4858;
+  color: var(--color-dark);
   font-weight: 300;
 }
 
@@ -10957,7 +10996,7 @@ legend {
 }
 
 .serif-font {
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
 }
 
 * {
@@ -14803,7 +14842,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
 }
 
 .title,
@@ -16136,18 +16175,10 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+/* #TODO in my styles */
 .header-filter {
 
-  /* --color-orange: #f86624;    /1* rgb(248,102,36) *1/ */
-  /* --color-yellow: #F9C80E;    /1* rgb(249,200,14) *1/ */
-  /* --color-pink: #ff5a5f;      /1* rgb(255,90,95) *1/ */
-  /* --color-purple: #662e9b;    /1* rgb(102,46,155) *1/ */
-  /* --color-blue: #43bccd;      /1* rgb(67,188,205) *1/ */
-  /* background-color: rgba(249,200,14,0.33); */
-  /* background-color: rgba(248,102,36,0.33); */
-  /* background-color: rgba(255,90,95,0.33); */
-  /* background-color: rgba(102,46,155,0.33); */
-  background-color: rgba(67,188,205,0.33);
+  background-color: var(--color-five-trans); 
   position: relative;
     overflow: hidden;
 }
@@ -16453,7 +16484,7 @@ footer .pull-center {
 .card.bg-primary,
 .card.card-rotate.bg-primary .front,
 .card.card-rotate.bg-primary .back {
-  background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+  background: linear-gradient(60deg, var(--color-primary), var(--color-primary-dark));
 }
 
 .card .card-header-info,
@@ -16477,11 +16508,11 @@ footer .pull-center {
   background: linear-gradient(60deg, #ffa726, #f57c00);
 }
 
-.card .card-header-danger,
+.card .card-header-highlight,
 .card.bg-danger,
 .card.card-rotate.bg-danger .front,
 .card.card-rotate.bg-danger .back {
-  background: linear-gradient(60deg, #ef5350, #d32f2f);
+  background: linear-gradient(60deg, var(--color-highlight), var(--color-highlight-dark));
 }
 
 .card .card-header-rose,
@@ -16495,7 +16526,7 @@ footer .pull-center {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
 }
 
-.card .card-header-danger {
+.card .card-header-highlight {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(244, 67, 54, 0.6);
 }
 
