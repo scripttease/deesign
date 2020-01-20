@@ -41,7 +41,7 @@
   --color-blue: #43bccd;      /* rgb(67,188,205) */
   --color-contrast: #43bccd;      /* rgb(67,188,205) */
 
-  --color-dark #424040;
+  --color-dark: #424040;
 
   --color-light #ffffff;
 }
@@ -71,7 +71,7 @@
   display: none;
 }
 
-/* SVG colours */
+/*Logo SVG colours */
 #SvgIcon {
   fill: var(--color-primary)
 }
@@ -79,6 +79,44 @@
 #SvgIconPath {
   fill: var(--color-primary)
 }
+
+/*img src Hexagon Icon SVG container */
+.svg-badge-container {
+  fill: img{ width 80%; }
+}
+
+/* Inline hexagon svg colours */
+.svg-hex-laptop-dark-f {
+  fill: var(--color-primary)
+}
+/* #svg-hex-laptop-dark-2-f { */
+/*   fill: var(--color-dark); */
+/* } */
+
+.svg-hex-laptop-light-f {
+  fill: var(--color-dark);
+}
+.svg-hex-mobile-dark-fs {
+  stroke: var(--color-primary);
+  fill: var(--color-primary);
+}
+.svg-hex-mobile-light-f {
+  fill: var(--color-primary);
+}
+.svg-hex-mobile-light-fs {
+  stroke: var(--color-pink);
+  fill: var(--color-dark);
+}
+/* #svg-hex-mobile-light-2-fs { */
+/*   stroke: var(--color-light); */
+/*   fill: var(--color-light); */
+/* } */
+
+
+
+
+
+
 
 /* ----- */
 
