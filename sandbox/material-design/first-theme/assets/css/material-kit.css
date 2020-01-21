@@ -42,13 +42,12 @@
   --color-contrast: #43bccd;      /* rgb(67,188,205) */
 
   --color-dark: #424040;
-
-  --color-light #ffffff;
+  --color-light: #ffffff;
 }
 
 /* branding */
 /* This is closest */
-.logo-text p {
+.logo-text {
   font-family: "ArvoBold", serif;
   font-size: 5.5rem;
   margin-left: 3.2rem;
@@ -57,13 +56,107 @@
 }
 
 /* This is closest */
-.slogan-text p {
+.slogan-text {
   font-family: "MetropolisExtraLight", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: x-large;
-    letter-spacing: 1.05rem;
+    letter-spacing: 0.6rem;
     color: #F07F61;
+}
+
+#header-slogan-text-bold {
+  font-family: "MetropolisRegular", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 1.05rem;
+    /* color: #F07F61; */
+    color: var(--color-dark);
+    margin-top: 2px;
+}
+
+
+#page-header-flex-container-al {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-al {
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 3.5rem;
+}
+
+#header-section-al {
+  padding-top: 1rem;
+}
+
+
+/* Taken from original css below. */
+
+/* margin top added */
+h2.title {
+  margin-top: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+
+.header-filter {
+  /* background-color: var(--color-five-trans); */ 
+  position: relative;
+  overflow: hidden;
+}
+
+.header-filter:before,
+.header-filter:after {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left:
+  0;
+  top: 0;
+  /* bottom: 0; */
+  /* right: 0; */
+  z-index: -1; 
+  content: "";
+  /* #NOTE paths must be absolute now im serving from the root */
+  background-image: url(../img/background-marble-topdark.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  opacity: 1;
+  background-position-x: center;
+  background-position-y: 100%;
+}
+
+/* .header-filter::before { */
+/*   background: rgba(0, 0, 0, 0.5); */
+/* } */
+
+.header-filter .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+/* ------------- */
+
+.card-description-al {
+  font-size: 16px;
+  color: var(--color-dark);
+  margin-right: auto;
+}
+
+.card-body-al{
 }
 
 /* SVG hiding for clearer html */
@@ -72,27 +165,37 @@
 }
 
 /*Logo SVG colours */
-#SvgIcon {
-  fill: var(--color-primary)
+/* #svg-logo { */
+/*   fill: var(--color-light) */
+/* } */
+
+#svg-icon {
+  fill: var(--color-light);
 }
 
-#SvgIconPath {
-  fill: var(--color-primary)
+#svg-icon-path {
+  fill: var(--color-light);
+}
+
+#svg-logo-text {
+  fill: var(--color-light);
+}
+
+#header-slogan-text-bold,
+#svg-slogan {
+  fill: var(--color-light);
+  color: var(--color-light);
 }
 
 /*img src Hexagon Icon SVG container */
 .svg-badge-container {
-  fill: img{ width 80%; }
+  fill: img{ width 100%; }
 }
 
 /* Inline hexagon svg colours */
 .svg-hex-laptop-dark-f {
-  fill: var(--color-primary)
+  fill: var(--color-primary);
 }
-/* #svg-hex-laptop-dark-2-f { */
-/*   fill: var(--color-dark); */
-/* } */
-
 .svg-hex-laptop-light-f {
   fill: var(--color-dark);
 }
@@ -101,20 +204,47 @@
   fill: var(--color-primary);
 }
 .svg-hex-mobile-light-f {
-  fill: var(--color-primary);
+  fill: var(--color-yellow);
+}
+.svg-hex-mobile-light-s {
+  fill: var(--color-yellow);
 }
 .svg-hex-mobile-light-fs {
-  stroke: var(--color-pink);
-  fill: var(--color-dark);
+  fill: var(--color-yellow);
+  stroke: var(--color-yellow);
 }
-/* #svg-hex-mobile-light-2-fs { */
-/*   stroke: var(--color-light); */
-/*   fill: var(--color-light); */
-/* } */
+.svg-hex-mobile-light-f-dark-s {
+  fill: var(--color-primary);
+  stroke: var(--color-dark);
+}
+.svg-hex-mobile-white-f-dark-s {
+  fill: white;
+  stroke: var(--color-dark);
+}
+.svg-hex-devices-hex-dark-s {
+  stroke: var(--color-primary);
+}
+.test {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+.svg-hex-serverslot1-light-fs {
+  fill: var(--color-light);
+  stroke: var(--color-light);
+}
+.svg-hex-server-dark-fs {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
+.svg-hex-keyboard-dark-f {
+  fill: var(--color-primary);
+}
 
 
-
-
+/* SVG positioning inside card */
+.card-svg {
+  justify-content: center;
+}
 
 
 
@@ -175,7 +305,7 @@ body {
   text-align: left;
   /* background-color: #fafafa; */
   /* background-color: var(--color-blue) ; */
-  background-color: var(--color-five-trans) ;
+  /* background-color: var(--color-five-trans) ; */
 
 }
 
@@ -14901,9 +15031,9 @@ small,
   text-decoration: none;
 }
 
-h2.title {
-  margin-bottom: 1rem;
-}
+/* h2.title { */
+/*   margin-bottom: 1rem; */
+/* } */
 
 .description,
 .card-description,
@@ -16213,43 +16343,45 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-/* #TODO in my styles */
-.header-filter {
 
-  background-color: var(--color-five-trans); 
-  position: relative;
-    overflow: hidden;
-}
+/* .header-filter { */
+/*   /1* background-color: var(--color-five-trans); *1/ */ 
+/*   position: relative; */
+/*   overflow: hidden; */
+/* } */
 
-.header-filter:before, 
-.header-filter:after {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  display: block;
-  left:
-  0;
-  top: 0;
-  /* bottom: 0; */
-  /* right: 0; */
-  z-index: -1; 
-  content: "";
-  background-image: url(/assets/img/background-shadow.jpg);
-  background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover;
-  opacity: 0.2;
-}
+/* .header-filter:before, */
+/* .header-filter:after { */
+/*   position: absolute; */
+/*   z-index: 1; */
+/*   width: 100%; */
+/*   height: 100%; */
+/*   display: block; */
+/*   left: */
+/*   0; */
+/*   top: 0; */
+/*   /1* bottom: 0; *1/ */
+/*   /1* right: 0; *1/ */
+/*   z-index: -1; */ 
+/*   content: ""; */
+/*   /1* #NOTE paths must be absolute now im serving from the root *1/ */
+/*   background-image: url(../img/background-collage.png) !important; */
+/*   background-repeat: no-repeat; */
+/*   background-position: 50% 0; */
+/*   background-size: cover; */
+/*   opacity: 0.2; */
+/*   background-position-x: center; */
+/*   background-position-y: 40%; */
+/* } */
 
-.header-filter::before {
-  background: rgba(0, 0, 0, 0.5);
-}
+/* /1* .header-filter::before { *1/ */
+/* /1*   background: rgba(0, 0, 0, 0.5); *1/ */
+/* /1* } *1/ */
 
-.header-filter .container {
-  z-index: 2;
-  position: relative;
-}
+/* .header-filter .container { */
+/*   z-index: 2; */
+/*   position: relative; */
+/* } */
 
 .clear-filter::before {
   background: none;
