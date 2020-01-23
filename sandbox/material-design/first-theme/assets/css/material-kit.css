@@ -129,7 +129,7 @@ h2.title {
   z-index: -1; 
   content: "";
   /* #NOTE paths must be absolute now im serving from the root */
-  background-image: url(../img/background-marble-topdark.jpg) !important;
+  background-image: url(../img/backround-neon-sign.jpg) !important;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -200,21 +200,21 @@ h2.title {
   fill: var(--color-dark);
 }
 .svg-hex-mobile-dark-fs {
-  stroke: var(--color-primary);
-  fill: var(--color-primary);
+  stroke: var(--color-dark);
+  fill: var(--color-dark);
 }
 .svg-hex-mobile-light-f {
-  fill: var(--color-yellow);
+  fill: var(--color-dark);
 }
 .svg-hex-mobile-light-s {
-  fill: var(--color-yellow);
+  fill: var(--color-dark);
 }
 .svg-hex-mobile-light-fs {
   fill: var(--color-yellow);
   stroke: var(--color-yellow);
 }
 .svg-hex-mobile-light-f-dark-s {
-  fill: var(--color-primary);
+  fill: var(--color-light);
   stroke: var(--color-dark);
 }
 .svg-hex-mobile-white-f-dark-s {
@@ -222,31 +222,102 @@ h2.title {
   stroke: var(--color-dark);
 }
 .svg-hex-devices-hex-dark-s {
-  stroke: var(--color-primary);
+  stroke: var(--color-dark);
 }
 .test {
   fill: var(--color-primary);
   stroke: var(--color-primary);
 }
 .svg-hex-serverslot1-light-fs {
-  fill: var(--color-light);
+  fill: var(--color-dark);
   stroke: var(--color-light);
 }
 .svg-hex-server-dark-fs {
   fill: var(--color-primary);
-  stroke: var(--color-primary);
+  stroke: var(--color-dark);
 }
 .svg-hex-keyboard-dark-f {
-  fill: var(--color-primary);
+  fill: var(--color-dark);
 }
 
+#hosting-text {
+  fill: var(--color-primary);
+  stroke: var(--color-primary);
+}
 
 /* SVG positioning inside card */
 .card-svg {
   justify-content: center;
 }
 
+/* Svg animations */
 
+#circle1 {
+  animation: pulse 5s infinite alternate;
+  animation-delay: 1s;
+}
+
+#circle2 {
+  animation: pulse 5s infinite alternate;
+  animation-delay: 2s;
+}
+
+#circle3 {
+  animation: pulse 5s infinite alternate;
+  animation-delay: 3s;
+}
+
+#circle4 {
+  animation: pulse 5s infinite alternate;
+  animation-delay: 4s;
+}
+
+@keyframes pulse {
+  0% {
+    fill: var(--color-dark);
+    stroke: var(--color-dark);
+  } 
+  20% {
+    fill: var(--color-white);
+    stroke: var(--color-dark);
+  }
+  90% {
+    fill: var(--color-white);
+    stroke: var(--color-dark);
+  } 
+  100% {
+    fill: var(--color-dark);
+    stroke: var(--color-dark);
+  } 
+}
+
+
+/* Sections with edited styling */
+
+.info-al {
+  /* max-width: 360px; */
+  /* margin: 0 auto; */
+  padding: 70px 0 30px;
+}
+
+h4.info-title-al {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    /* margin-bottom: 12px; */
+    /* padding-bottom: 15px; */
+}
+
+h4.info-title-l2-al {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 12px;
+    padding-bottom: 15px;
+}
+
+.p-al {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+}
 
 /* ----- */
 
