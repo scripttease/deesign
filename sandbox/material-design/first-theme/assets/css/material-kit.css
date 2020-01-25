@@ -159,8 +159,75 @@ h2.title {
 .card-body-al{
 }
 
+/*  ------------- #NOTE this is commented out in orig below */
+
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading {
+  font-weight: 700;
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
+  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
+  /* font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.2;
+  color: inherit;
+}
+
+---------End of stolen copied out commented css -------------
+
+
+
+
+
+
+
+
+
+/* ------ SVG stuff -------- */
+
 /* SVG hiding for clearer html */
-.defs-only {
+svg.defs-only {
+  display: none;
+}
+svg.defs-only:not(:root) {
   display: none;
 }
 
@@ -318,6 +385,95 @@ h4.info-title-l2-al {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-size: 16px;
 }
+
+.card.featured-card-al {
+  margin-top: 75px;
+}
+
+#featured-card-header-primary {
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  /* background: linear-gradient(60deg, #26c6da, #0097a7); */
+  /* background: linear-gradient(60deg, #f2d0f2, #ca5cc2); */
+  /*   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(193, 2, 169, 0.89); */
+    background: linear-gradient(60deg, #dac1db, #b951b1);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(213, 29, 196, 0.8);
+}
+
+#featured-card-header-secondary {
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  /* background: linear-gradient(60deg, #26c6da, #0097a7); */
+    /* background: linear-gradient(60deg, #98bfe8, #4271cc); */
+    /* box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgb(1, 79, 227); */
+    /* background: linear-gradient(60deg, #708fc8, #3954a8); */
+        background: linear-gradient(60deg, #8ca6d4, #3954a8);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(1, 79, 227, 0.8);
+}
+
+#featured-card-header-tertiary {
+  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+    background: linear-gradient(60deg, #8e60ba, #3e315e);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(108, 5, 201, 0.8);
+}
+
+
+h4.card-title-al {
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-size: 20px;
+}
+
+a.btn.btn-primary.al-btn-primary {
+    color: #fff;
+    /* background-color: #9c27b0; -- orig*/
+    /* background-color: #cc77c7; -- matching header */
+    /* background-color: #6f8dc7; */
+    /* border-color: #6f8dc7;  -- in secondary*/
+    /* border-color: #9c27b0; */
+    /* color: #9a4693; */
+    /* background-color: #ffffff; */
+    /* box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12); */ 
+    /* --abv works with pink not blue*/
+    /* box-shadow: 0 2px 2px 0 rgba(95, 135, 197, 0.2), 0 3px 1px -2px rgba(37, 78, 159, 0.5), 0 1px 5px 0 rgba(44, 56, 125, 0.2); -- matches secondary */
+    color: #d286d3;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(215, 147, 216, .2), 0 1px 5px 0 rgba(67, 17, 76, 0.12);
+    font-weight: bold;
+}
+
+a.btn.btn-primary.al-btn-secondary {
+    color: #fff;
+    color: #4d7bcf;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(39, 47, 176, 0.14), 0 3px 1px -2px rgba(67, 102, 235, 0.2), 0 1px 5px 0 rgba(19, 34, 121, 0.12);
+    font-weight: bold;
+  }
+
+a.btn.btn-primary.al-btn-tertiary {
+    color: #fff;
+        color: #72509b;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(61, 18, 125, 0.14), 0 3px 1px -2px rgba(102, 67, 235, 0.2), 0 1px 5px 0 rgba(42, 19, 121, 0.12);
+    font-weight: bold;
+  }
+
+  /* -----cards with tabs --- */
+  
+.tab-card-header-secondary {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgb(133, 90, 175) !important;
+    background: linear-gradient(60deg, #8b5eb7, #40325f) !important;
+  }
+
+.tab-card-header-primary {
+background: linear-gradient(60deg, #cf9dcd, #ba53b2) !important;
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6) !important;
+}
+
 
 /* ----- */
 
@@ -1078,24 +1234,24 @@ template {
   display: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 1.2;
-  color: inherit;
-}
+/* h1, */
+/* h2, */
+/* h3, */
+/* h4, */
+/* h5, */
+/* h6, */
+/* .h1, */
+/* .h2, */
+/* .h3, */
+/* .h4, */
+/* .h5, */
+/* .h6 { */
+/*   margin-bottom: 0.5rem; */
+/*   font-family: inherit; */
+/*   font-weight: 400; */
+/*   line-height: 1.2; */
+/*   color: inherit; */
+/* } */
 
 h1,
 .h1 {
@@ -14979,21 +15135,21 @@ textarea {
   color: #e91e63;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-}
+/* body, */
+/* h1, */
+/* h2, */
+/* h3, */
+/* h4, */
+/* h5, */
+/* h6, */
+/* .h1, */
+/* .h2, */
+/* .h3, */
+/* .h4 { */
+/*   font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+/*   font-weight: 300; */
+/*   line-height: 1.5em; */
+/* } */
 
 h1,
 h2,
@@ -15073,16 +15229,16 @@ small,
   color: #777;
 }
 
-.title,
-.card-title,
-.info-title,
-.footer-brand,
-.footer-big h5,
-.footer-big h4,
-.media .media-heading {
-  font-weight: 700;
-  font-family: "ArvoBold", "Roboto Slab", "Times New Roman", serif;
-}
+/* .title, */
+/* .card-title, */
+/* .info-title, */
+/* .footer-brand, */
+/* .footer-big h5, */
+/* .footer-big h4, */
+/* .media .media-heading { */
+/*   font-weight: 700; */
+/*   font-family: "Roboto", "Helvetica", "Arial", sans-serif; */
+/* } */
 
 .title,
 .title a,
