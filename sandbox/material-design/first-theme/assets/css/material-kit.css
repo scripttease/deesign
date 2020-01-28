@@ -84,7 +84,7 @@
   align-content: center;
 }
 
-.header-al {
+.svg-logo-container-al {
   flex-direction: column;
   justify-content: center;
   display: flex;
@@ -94,7 +94,7 @@
   padding-bottom: 3.5rem;
 }
 
-#header-section-al {
+#first-main-section-al {
   padding-top: 1rem;
 }
 

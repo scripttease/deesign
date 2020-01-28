@@ -55,185 +55,294 @@ body {
 }
 
 a,
-*:visited {
-  text-decoration: none;
-  color: $color-link;
-}
+  *:visited {
+    text-decoration: none;
+    color: $color-link;
+  }
 
-a:not(.disabled) {
-  cursor: pointer;
-}
+  a:not(.disabled) {
+    cursor: pointer;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  font-weight: normal;
-  break-after: avoid-page;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    font-weight: normal;
+    break-after: avoid-page;
+  }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.bullet-list {
-  list-style: initial;
-  padding-left: 1.2em;
-  margin: initial;
-}
+  .bullet-list {
+    list-style: initial;
+    padding-left: 1.2em;
+    margin: initial;
+  }
 
-.page {
-  padding: $page-padding ($page-padding * 2);
-  padding-bottom: $page-padding * 5;
-  min-height: 70vh;
-}
+  .page {
+    padding: $page-padding ($page-padding * 2);
+    padding-bottom: $page-padding * 5;
+    min-height: 70vh;
+  }
 
-.page > h1:first-child {
-  margin-top: 0;
-}
+  .page > h1:first-child {
+    margin-top: 0;
+  }
 
-/* End sidebar css */
+  /* End sidebar css */
 
-.met-x-light p {
-  font-family: "MetropolisExtraLight", sans-serif;
-  text-transform: uppercase;
-  font-size: x-large;
-  letter-spacing: 1rem;
-}
+  .met-x-light p {
+    font-family: "MetropolisExtraLight", sans-serif;
+    text-transform: uppercase; font-size: x-large; letter-spacing: 1rem; } .met-light p { font-family: "MetropolisLight", sans-serif; text-transform: uppercase; font-size: x-large;
+    letter-spacing: 1rem;
+  }
 
-.met-light p {
-  font-family: "MetropolisLight", sans-serif;
-  text-transform: uppercase;
-  font-size: x-large;
-  letter-spacing: 1rem;
-}
+  .met-thin p {
+    font-family: "MetropolisThin", sans-serif;
+    text-transform: uppercase;
+    font-size: x-large;
+    letter-spacing: 1rem;
+  } 
 
-.met-thin p {
-  font-family: "MetropolisThin", sans-serif;
-  text-transform: uppercase;
-  font-size: x-large;
-  letter-spacing: 1rem;
-} 
+  .met-reg p {
+    font-family: "MetropolisRegular", sans-serif;
+    text-transform: uppercase;
+    font-size: x-large;
+    letter-spacing: 1rem;
+  } 
 
-.met-reg p {
-  font-family: "MetropolisRegular", sans-serif;
-  text-transform: uppercase;
-  font-size: x-large;
-  letter-spacing: 1rem;
-} 
-
-.arvo-reg p {
-  font-family: "ArvoRegular", serif;
-  font-size: x-large;
-} 
+  .arvo-reg p {
+    font-family: "ArvoRegular", serif;
+    font-size: x-large;
+  } 
 
 
-.arvo-bold p {
-  font-family: "ArvoBold", serif;
-  font-size: 5.5rem;
-  margin-left: 3.2rem;
-  color: #424040;
-  margin-bottom: 1rem;
-} 
+  .arvo-bold p {
+    font-family: "ArvoBold", serif;
+    font-size: 5.5rem;
+    margin-left: 3.2rem;
+    color: #424040;
+    margin-bottom: 1rem;
+  } 
 
-.logo-text p {
-  font-family: "ArvoBold", serif;
-  font-size: 5.5rem;
-  margin-left: 3.2rem;
-  color: #424040;
-  margin-bottom: 1rem;
-}
+  .logo-text p {
+    font-family: "ArvoBold", serif;
+    font-size: 5.5rem;
+    margin-left: 3.2rem;
+    color: #424040;
+    margin-bottom: 1rem;
+  }
 
-.slogan-text p {
-  font-family: "MetropolisExtraLight", sans-serif;
+  .slogan-text p {
+    font-family: "MetropolisExtraLight", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     font-size: x-large;
     letter-spacing: 1.05rem;
     color: #F07F61;
-}
-
-.slogan-text-two p {
-  font-family: "MetropolisRegular", sans-serif;
-  text-transform: uppercase;
-  font-size: x-large;
-  letter-spacing: 1rem;
-  color:#F07F61;
-}
-
-
-/* -- Header -- */
-
-.page-header-al {
-  height: 70vh;
-    background-position: center center;
-    background-position: right 35% bottom 45%;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    border: 0;
   }
 
-#page-header-flex-container-al {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  .slogan-text-two p {
+    font-family: "MetropolisRegular", sans-serif;
+    text-transform: uppercase;
+    font-size: x-large;
+    letter-spacing: 1rem;
+    color:#F07F61;
+  }
+
+  /* -- Navbar -- */ 
+
+  .navbar-al {
+    padding-top: 0px !important;
+  }
+
+  /* -- Header -- */
+
+  .page-header-al {
+    height: 50vh !important;
+    /* background-position: center center; */
+    /* background-position: right 35% bottom 45%; */
+    /* background-size: cover; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* border: 0; */
+  }
+
+  #page-header-flex-container-al {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .svg-logo-container-al {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding-bottom: 3.5rem; */
+  }
+
+  #header-slogan-text-bold {
+    font-family: "MetropolisThin", sans-serif;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    font-size: x-large;
+    letter-spacing: 0.1rem;
+    /* color: #F07F61; */
+    color: var(--color-light);
+    margin-top: 2px;
+  }
+
+  .header-filter {
+    /* background-color: var(--color-five-trans); */ 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header-filter:before,
+  .header-filter:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left:
+    0;
+    top: 0;
+    /* bottom: 0; */
+    /* right: 0; */
+    z-index: -1; 
+    content: "";
+    /* #NOTE paths must be absolute now im serving from the root */
+    background-image: url(../img/backround-neon-sign.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    opacity: 1;
+    background-position-x: center;
+    background-position-y: 100%;
+  }
+
+  #header-img-logo-svg {
+    max-height: 95%;
+    max-width: 95%;
+    padding-bottom: 4rem;
+  }
+
+  /* -- Main Section -- */ 
+
+  .main.main-raised-al {
+    margin-top: -3rem;
+  }
+
+  #first-main-section-al {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  #first-main-section-al > p {
+    /* text-align: justify; */
+  }
+
+  h2.title-al {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  
+  .card-al {
+    flex-direction: row !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-svg {
+    align-self: center;
+    justify-content: center;
+    width: 160%;
+  }
+
+  .card-title-al {
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+  .card-description-al {
+    /* #TODO convert to rem */
+    /* font-size: 14px !important; */
+  }
+
+  p.card-description-al {
+    text-align: justify;
+  }
+
+  .card-body-al {
+align-self: center;
 }
 
-.header-al {
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 3.5rem;
-}
+  .img-raised-al {
+        width: 50%;
+    margin-top: -1.5rem;
+  }
 
-#header-section-al {
-  padding-top: 1rem;
-}
 
-.header-filter {
-  /* background-color: var(--color-five-trans); */ 
-  position: relative;
-  overflow: hidden;
-}
+  /* -- SVGs -- */
+  .display-none: {
+    display: none !important;
+  }
 
-.header-filter:before,
-.header-filter:after {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  display: block;
-  left:
-  0;
-  top: 0;
-  /* bottom: 0; */
-  /* right: 0; */
-  z-index: -1; 
-  content: "";
-  /* #NOTE paths must be absolute now im serving from the root */
-  background-image: url(../img/backround-neon-sign.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-  opacity: 1;
-  background-position-x: center;
-  background-position-y: 100%;
-}
+  .defs-only: {
+    display: none !important;
+  }
 
-.display-none: {
-  display: none !important;
-}
 
-.defs-only: {
-  display: none !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* -- Media Queries -- */ 
+  @media (max-width: 375px) {
+
+    /* -- padding for header logo image -- */
+    .page-header-al {
+      height: 35vh !important;
+    }
+    #header-img-logo-svg {
+      max-height: 95%;
+      max-width: 95%;
+      padding-bottom: 1.5rem;
+    }
+
+    .main.main-raised-al {
+      margin-top: -1.5rem;
+    }
+  }
+
