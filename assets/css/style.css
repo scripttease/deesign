@@ -43,11 +43,82 @@
 
 /* For Sidebar not yet used */
 
+/* -- Branding -- */
+
+.logo-text {
+  font-family: "ArvoBold", serif;
+  font-size: 5.5rem;
+  margin-left: 3.2rem;
+  color: #424040;
+  margin-bottom: 1rem;
+}
+
+#logo-text-navbar {
+  font-family: "ArvoBold", serif;
+  font-size: 4.5vw;
+  /* margin-left: 3.2rem; */
+  /* color: #424040; */
+  /* margin-bottom: 1rem; */
+}
+
+.header-intro > p {
+  /* font-family: "ArvoBold", serif; */
+  font-family: "rafaleru", serif;
+  /* font-family: "rafalebg", sans-serif; */
+  color: var(--color-light);
+  font-size: 5.5vw;
+  /* text-shadow: 1px 1px 2px hotpink, 0 0 1em blue, 0 0 0.2em blue; */
+  /* text-shadow: 1px 1px 2px #0f0e0f, 0 0 1em #d48bd6, 0 0 0.2em #beaddb; */
+  /* text-shadow: 1px 1px 6px #fdfbfb, -1px -1px 0em #fcfafa, 2px -3px 0em #35313b; */
+  /* text-shadow: 1px 1px 6px #fdfbfb, -1px -1px 0em #fcfafa, 2px -3px 0em #35313b; */
+  /* text-shadow: 1px 1px 2px #0f0e0f, -1px -1px 1em #d48bd6, 2px -3px 0.2em #673ab7; */
+  text-shadow: 3px -2px 2px #0f0e0f, -1px -1px 1em #d48bd6, 2px -3px 0.2em #673ab7;
+  margin-bottom: 0px;
+}
+
+span#emphasis {
+  color: var(--color-light);
+  font-size: 7vw;
+  /* text-shadow: 1px 1px 6px #fdfbfb, -1px -1px 0em #fcfafa, 2px -3px 0em #35313b; */
+  /* text-shadow: 2px -3px 0em #35313b, 1px 1px 6px #fdfbfb, -1px -1px 0em #fcfafa; */
+  text-shadow: 2px -1px 0em #0c0c0d73, -1.5px 0px 6px #fdfbfbc2, -1px 2px 0.5em #fcfafa;
+}
+
+
+
+/* This is closest */
+.slogan-text {
+  font-family: "MetropolisExtraLight", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 0.6rem;
+  color: #F07F61;
+}
+
+#header-slogan-text-bold {
+  font-family: "MetropolisRegular", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-large;
+  letter-spacing: 1.05rem;
+  /* color: #F07F61; */
+  color: var(--color-dark);
+  margin-top: 2px;
+}
+
+
 
 body {
   background-color: $color-background;
   font-family: "Work Sans", sans-serif;
   font-size: $font-size;
+}
+
+/* #TODO change for media queries */
+p {
+  font-size: 1rem;
+  color: #554971;
 }
 
 * {
@@ -101,7 +172,7 @@ a,
 
   .met-x-light p {
     font-family: "MetropolisExtraLight", sans-serif;
-    text-transform: uppercase; font-size: x-large; letter-spacing: 1rem; } .met-light p { font-family: "MetropolisLight", sans-serif; text-transform: uppercase; font-size: x-large;
+  text-transform: uppercase; font-size: x-large; letter-spacing: 1rem; } .met-light p { font-family: "MetropolisLight", sans-serif; text-transform: uppercase; font-size: x-large;
     letter-spacing: 1rem;
   }
 
@@ -162,6 +233,10 @@ a,
 
   .navbar-al {
     padding-top: 0px !important;
+  }
+
+  .navbar-al > .container {
+    max-width: unset;
   }
 
   /* -- Header -- */
@@ -258,9 +333,19 @@ a,
   h2.title-al {
     margin-top: 0rem;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
 
-  
+  h3.title-al {
+    /* margin-top: 0rem; */
+    /* margin-bottom: 0.5rem; */
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+
   .card-al {
     flex-direction: row !important;
     margin-top: 0px;
@@ -288,11 +373,11 @@ a,
   }
 
   .card-body-al {
-align-self: center;
-}
+    align-self: center;
+  }
 
   .img-raised-al {
-        width: 50%;
+    width: 50%;
     margin-top: -1.5rem;
   }
 
@@ -306,6 +391,44 @@ align-self: center;
     display: none !important;
   }
 
+ /* -- neon iframes -- */ 
+
+  .neon-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 37.04%;  /*height divided by width*/
+  }
+
+  .neon-text-container {
+    /* background-color: var(--color-dark); */
+    background-color: #313131;
+        border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .neon-text-container > span {
+    text-shadow: 0 0 15px #F08FFF, 5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 10px #F08FFF, 0 0 100px #F08FFF, 0 0 500px #F08FFF;
+    font-family: 'RafaleRU', Helvetica, Arial;
+    font-size: 65px;
+    color: #FDBAFF;
+    font-size: 10vw;
+  }
+  
+  .neon-text-container > .off {
+    color: rgba(46, 46, 46, 0.61);
+    text-shadow: 7px 7px 5px rgba(0, 0, 0, 1);
+  }
+
+  
 
 
 
@@ -345,4 +468,6 @@ align-self: center;
       margin-top: -1.5rem;
     }
   }
+
+
 
