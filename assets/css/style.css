@@ -277,10 +277,14 @@ a:not(.disabled) {
 }
 
 #first-main-section-al {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1em;
+  padding-bottom: 0.25em;
 }
 
+.main-section-al {
+  padding-top: 1em;
+  padding-bottom: 0.25em;
+}
 #first-main-section-al > p {
   /* text-align: justify; */
 }
@@ -308,7 +312,7 @@ h3.title-al {
 
 
 .featured-card-al {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .card-al {
@@ -324,12 +328,9 @@ h3.title-al {
 }
 
 .card-title-al {
-  margin-top: 0px;
-  margin-bottom: 0px;
 
 }
 
-}
 .card-description-al {
   /* #TODO convert to rem */
   /* font-size: 14px !important; */
@@ -337,12 +338,16 @@ h3.title-al {
 
 .card-description-al {
   font-size: 16px;
-  color: var(--color-dark);
+  color: var(--color-font);
   margin-right: auto;
 }
 
 p.card-description-al {
   text-align: justify;
+}
+
+.p-al {
+  color: var(--font-color);
 }
 
 .card-body-al {
