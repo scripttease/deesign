@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" href="/fonts/MetropolisExtraLight/MetropolisExtraLight.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisLight/MetropolisLight.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisRegular/MetropolisRegular.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisThin/MetropolisThin.css"/>
     <link rel="stylesheet" href="/fonts/Arvo/ArvoRegular.css"/>
     <link rel="stylesheet" href="/fonts/Arvo/ArvoBold.css"/>
-    <link rel="stylesheet" href="/fonts/MetropolisThin/MetropolisThin.css"/>
     <link rel="stylesheet" href="/fonts/rafaleru/rafaleru.css"/>
     <link rel="stylesheet" href="/fonts/rafalebg/rafalebg.css"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -24,6 +26,31 @@
   </head>
 
   <body>
+
+    <!-- SVG hosting hexagon link -->
+    <!-- #NOTE #IMPORTANT Adding class defs-only means css animations fail -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+      <symbol id="hosting-hexagon-icon">
+      <path id="hosting-server" class="primary-f-dark-s" d="M216.5 284.5V113.5H307.5V284.5H216.5Z" fill="black" stroke="white" stroke-width="3"/>
+      <path id="hosting-slot1" class="dark-f-light-s" d="M295 142.25C295 143.769 292.312 145 288.999 145H234.998C231.685 145 229 143.769 229 142.25V136.75C229 135.231 231.685 134 234.998 134H288.999C292.312 134 295 135.231 295 136.75V142.25Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-slot2" class="dark-f-light-s" d="M295 194.596C295 197.284 292.312 199.462 288.999 199.462H234.998C231.685 199.462 229 197.284 229 194.596V184.865C229 182.178 231.685 180 234.998 180H288.999C292.312 180 295 182.178 295 184.865V194.596Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-slot3"  class="dark-f-light-s" d="M295 164.25C295 165.769 292.312 167 288.999 167H234.998C231.685 167 229 165.769 229 164.25V158.75C229 157.231 231.685 156 234.998 156H288.999C292.312 156 295 157.231 295 158.75V164.25Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-screen" d="M77.2799 211C71.0815 211 66 216.131 66 222.374V324.638C66 330.881 71.0815 336 77.2799 336H250.72C256.918 336 262 330.881 262 324.638V222.374C262 216.131 256.918 211 250.72 211H77.2799ZM77.2799 217.507H250.72C253.451 217.507 255.54 219.623 255.54 222.374V324.638C255.54 327.39 253.451 329.493 250.72 329.493H77.2799C74.5485 329.493 72.4602 327.39 72.4602 324.638V222.374C72.4602 219.623 74.5486 217.507 77.2799 217.507Z" fill="black"/>
+      <path id="hosting-keyboard" class="svg-hex-keyboard-dark-f" d="M56 338C56 344.647 60.6943 350 66.5234 350H261.477C267.306 350 272 344.647 272 338H56Z" fill="black"/>
+      <path id="hosting-button" d="M147.897 340H180.103C180.6 340 181 340.446 181 341C181 341.554 180.6 342 180.103 342H147.897C147.4 342 147 341.555 147 341C147 340.447 147.4 340 147.897 340Z" fill="white"/>
+      <rect id="hosting-screen-fill" x="69.5" y="214.5" width="189" height="118" rx="10.5" fill="white" stroke="black" stroke-width="7"/> <path id="hosting-text" d="M138.469 257.617L141.914 239.406H147.17L141.492 265H136.184L132.018 247.879L127.852 265H122.543L116.865 239.406H122.121L125.584 257.582L129.803 239.406H134.268L138.469 257.617ZM169.969 257.617L173.414 239.406H178.67L172.992 265H167.684L163.518 247.879L159.352 265H154.043L148.365 239.406H153.621L157.084 257.582L161.303 239.406H165.768L169.969 257.617ZM201.469 257.617L204.914 239.406H210.17L204.492 265H199.184L195.018 247.879L190.852 265H185.543L179.865 239.406H185.121L188.584 257.582L192.803 239.406H197.268L201.469 257.617ZM144.375 294.137L154.395 297.67V302.592L139.26 296.176V292.027L154.395 285.611V290.533L144.375 294.137ZM160.178 307.197H156.398L165.82 279.406H169.6L160.178 307.197ZM182.414 294.084L172.201 290.516V285.629L187.512 292.045V296.176L172.201 302.609V297.705L182.414 294.084Z" fill="black"/>
+      <path id="circle1" d="M116.215 191.67C116.225 193.199 115.932 194.715 115.354 196.13C114.775 197.546 113.921 198.833 112.842 199.918C111.763 201.002 110.481 201.863 109.067 202.451C107.654 203.038 106.139 203.34 104.608 203.34C103.077 203.34 101.562 203.038 100.148 202.451C98.7351 201.863 97.4522 201.002 96.3733 199.918C95.2945 198.833 94.441 197.546 93.8621 196.13C93.2832 194.715 92.9903 193.199 93.0002 191.67C92.9903 190.141 93.2832 188.625 93.8621 187.21C94.441 185.794 95.2945 184.507 96.3733 183.423C97.4522 182.338 98.7351 181.477 100.148 180.89C101.562 180.302 103.077 180 104.608 180C106.139 180 107.654 180.302 109.067 180.89C110.481 181.477 111.763 182.338 112.842 183.423C113.921 184.507 114.775 185.794 115.354 187.21C115.932 188.625 116.225 190.141 116.215 191.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle3" class="test" d="M158.215 153.67C158.225 155.199 157.932 156.715 157.354 158.13C156.775 159.546 155.921 160.833 154.842 161.918C153.764 163.002 152.481 163.863 151.067 164.451C149.654 165.038 148.139 165.34 146.608 165.34C145.077 165.34 143.562 165.038 142.148 164.451C140.735 163.863 139.452 163.002 138.373 161.918C137.294 160.833 136.441 159.546 135.862 158.13C135.283 156.715 134.99 155.199 135 153.67C134.99 152.141 135.283 150.625 135.862 149.21C136.441 147.794 137.294 146.507 138.373 145.423C139.452 144.338 140.735 143.477 142.148 142.89C143.562 142.302 145.077 142 146.608 142C148.139 142 149.654 142.302 151.067 142.89C152.481 143.477 153.764 144.338 154.842 145.423C155.921 146.507 156.775 147.794 157.354 149.21C157.932 150.625 158.225 152.141 158.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle4" d="M198.215 153.67C198.225 155.199 197.932 156.715 197.354 158.13C196.775 159.546 195.921 160.833 194.842 161.918C193.764 163.002 192.481 163.863 191.067 164.451C189.654 165.038 188.139 165.34 186.608 165.34C185.077 165.34 183.562 165.038 182.148 164.451C180.735 163.863 179.452 163.002 178.373 161.918C177.294 160.833 176.441 159.546 175.862 158.13C175.283 156.715 174.99 155.199 175 153.67C174.99 152.141 175.283 150.625 175.862 149.21C176.441 147.794 177.294 146.507 178.373 145.423C179.452 144.338 180.735 143.477 182.148 142.89C183.562 142.302 185.077 142 186.608 142C188.139 142 189.654 142.302 191.067 142.89C192.481 143.477 193.764 144.338 194.842 145.423C195.921 146.507 196.775 147.794 197.354 149.21C197.932 150.625 198.225 152.141 198.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle2" d="M116.215 153.67C116.225 155.199 115.932 156.715 115.354 158.13C114.775 159.546 113.921 160.833 112.842 161.918C111.764 163.002 110.481 163.863 109.067 164.451C107.654 165.038 106.139 165.34 104.608 165.34C103.077 165.34 101.562 165.038 100.148 164.451C98.7351 163.863 97.4522 163.002 96.3733 161.918C95.2945 160.833 94.441 159.546 93.8621 158.13C93.2833 156.715 92.9903 155.199 93.0002 153.67C92.9903 152.141 93.2833 150.625 93.8621 149.21C94.441 147.794 95.2945 146.507 96.3733 145.423C97.4522 144.338 98.7351 143.477 100.148 142.89C101.562 142.302 103.077 142 104.608 142C106.139 142 107.654 142.302 109.067 142.89C110.481 143.477 111.764 144.338 112.842 145.423C113.921 146.507 114.775 147.794 115.354 149.21C115.932 150.625 116.225 152.141 116.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="hosting-hexagon" class="primary-s" d="M209 11.42L408.69 126.71V357.29L209 472.58L9.31 357.29L9.31001 126.71L209 11.42Z" stroke="black" stroke-width="18.446" stroke-linecap="round"/>
+      </symbol>
+      </defs>
+    </svg>
+
+
+
     <!-- SVG Logo link -->
     <svg class="defs-only" class="display-none" style="display:none">
       <symbol>
@@ -37,14 +64,17 @@
     </svg>
 
 
-    <!-- SVG Content Hexagon -->
-    <svg class="defs-only" width="418" height="484" viewBox="0 0 418 484" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-      <symbol id="content-hexagon">
-      <rect x="202" y="228" width="104" height="27" rx="5" fill="#C4C4C4"/>
-      <rect x="202" y="189" width="104" height="27" rx="5" fill="#C4C4C4"/>
-      <rect x="202" y="149" width="104" height="27" rx="5" fill="#C4C4C4"/>
-      <rect x="109" y="149" width="69" height="105" rx="5" fill="#C4C4C4"/>
+    <!-- SVG Content Hexagon -->
+
+    <!-- #NOTE #IMPORTANT Adding class defs-only means css animations fail -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+      <symbol id="content-hexagon-icon">
+      <rect x="109" y="149" width="69" height="105" rx="5" fill="#C4C4C4" id="lap-col"/>
+      <rect x="202" y="149" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row1"/>
+      <rect x="202" y="189" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row2"/>
+      <rect x="202" y="228" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row3"/>
       <path d="M96.2018 123C88.4003 123 82.0045 129.493 82.0045 137.392V266.791C82.0045 274.691 88.4003 281.168 96.2018 281.168H314.5C322.301 281.168 328.697 274.691 328.697 266.791V137.392C328.697 129.493 322.301 123 314.5 123H96.2018ZM96.2018 131.233H314.5C317.937 131.233 320.566 133.911 320.566 137.392V266.791C320.566 270.273 317.937 272.935 314.5 272.935H96.2018C92.764 272.935 90.1355 270.273 90.1355 266.791V137.392C90.1355 133.911 92.7641 131.233 96.2018 131.233Z" fill="black"/>
       <path d="M69 283.545C69 292.235 74.9266 299.234 82.2859 299.234H328.416C335.775 299.234 341.701 292.235 341.701 283.545H69Z" fill="black"/>
       <path d="M185.048 286.838H225.661C226.287 286.838 226.792 287.349 226.792 287.984C226.792 288.618 226.287 289.129 225.661 289.129H185.048C184.421 289.129 183.917 288.619 183.917 287.984C183.917 287.35 184.421 286.838 185.048 286.838Z" fill="white"/>
@@ -52,11 +82,12 @@
       <path d="M310.396 188.998C310.396 189.707 309.749 190.36 308.851 190.36H288.851C287.952 190.36 287.305 189.707 287.305 188.998C287.305 188.289 287.952 187.636 288.851 187.636H308.851C309.749 187.636 310.396 188.289 310.396 188.998Z" fill="#1A1A1A" stroke="white" stroke-width="0.999991"/>
       <path d="M343.352 193.757H254.349V345.617H343.352V193.757Z" fill="white"/>
       <path d="M311.351 354.72C311.351 355.863 310.333 356.789 309.078 356.789H288.623C287.368 356.789 286.351 355.863 286.351 354.72V350.582C286.351 349.439 287.368 348.513 288.623 348.513H309.078C310.333 348.513 311.351 349.439 311.351 350.582V354.72Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
-      <path d="M209 11.42L408.69 126.71V357.29L209 472.58L9.31 357.29L9.31001 126.71L209 11.42Z" stroke="black" stroke-width="18.446" stroke-linecap="round"/>
-      <rect x="265" y="202" width="68" height="67" rx="5" fill="#C4C4C4"/>
-      <rect x="265" y="281" width="68" height="22" rx="5" fill="#C4C4C4"/>
-      <rect x="265" y="313" width="68" height="22" rx="5" fill="#C4C4C4"/>
+      <path id="content-hexagon" class="primary-s" d="M209 11.42L408.69 126.71V357.29L209 472.58L9.31 357.29L9.31001 126.71L209 11.42Z" stroke="black" stroke-width="18.446" stroke-linecap="round"/>
+      <rect x="265" y="202" width="68" height="67" rx="5" fill="#C4C4C4" id="mob-row1"/>
+      <rect x="265" y="281" width="68" height="22" rx="5" fill="#C4C4C4" id="mob-row2"/>
+      <rect x="265" y="313" width="68" height="22" rx="5" fill="#C4C4C4" id="mob-row3"/>
       </symbol>
+      </defs>
     </svg>
 
 
@@ -80,7 +111,23 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="material-icons">apps</i> Template
+                  <!-- <i class="material-icons">apps</i> Template -->
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#prices" class="nav-link">
+                  Prices
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                  Contact
                 </a>
               </li>
             </ul>
@@ -92,7 +139,7 @@
       <!-- Page Header -->
       <!-- #TODO change the header positioning wrt breakpoints -->
       <div class="page-header page-header-al header-filter" id="page-header-flex-container-al" > 
-        <div class="header-intro logo-text-header">
+        <div class="header-intro ">
           <p>
         Design &amp; Development <span id="emphasis">Experience</span>
           </p>
@@ -109,72 +156,44 @@
       <div class="main main-raised main-raised-al">
         <div class="container">
           <div class="section text-center" id="first-main-section-al">
-
+            <!-- <div class="card"> -->
             <h3 class="title title-al">Signpost Your Site</h3>
-            <p class="card-description" >Your website is your storefront, marketing campaign, advert &amp;/or brand identity, so it makes sense to give it some love.</p>
+
+            <p>Your website is your advertisement, storefront, marketing campaign, brand identity... So it makes sense to give it some love.</p>
+
+            <!-- Content Design Hexagon -->
+            <div class="svg-icon-container container">
+              <svg width="70px" viewBox="0 0 418 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#content-hexagon-icon"></use>
+              </svg>
+            </div>
+
             <p>Is your current site not doing you justice? Do you need help keeping it updated or maintained? </p>
+
+            <!-- maintenance image text maintenance -->
+            <!-- Hosting Hexagon -->
+            <div class="svg-icon-container container">
+              <svg width="70px" viewBox="0 0 418 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#hosting-hexagon-icon"></use>
+              </svg>
+            </div>
+
             <p>Together we can craft the perfect digital solution for you. Take advantage of my <a href="#">introductory offers</a> while I build my <a href="#">portfolio</a>.</p> 
 
-            <!-- Test Neon Sign -->
-              <div class="row">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <div class="neon-text-container">
-                      Test Text.
-                      <!-- <span class="">I</span> -->
-                      <!-- <span class="off">'</span> -->
-                      <!-- <span class="">m </span> -->
-                      <!-- <span class="off"> </span> -->
-                      <!-- <span class="">N</span> -->
-                      <!-- <span class="">e</span> -->
-                      <!-- <span class="off">w</span> -->
-                    </div>
-                  <div class="card-body ">
-                    <h6 class="card-category text-gray">Card 1</h6>
-                    <h4 class="card-title">card title</h4>
-                    <p class="card-description">Experienced designer and developer
-                    New to freelance
-                    Great intro prices</p>
-                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
-                  </div>
-                </div>
-                </div>
-                </div>
+            <!-- marketing image text marketing? -->
+            <!-- </div> -->
+          </div>
+        </div>
 
-
-              <div class="row">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <!-- <a href="#pablo"> -->
-                    <div class="container iframe-container">
-
-                      <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
-                    </div>
-                    <!-- </a> -->
-                  </div>
-                  <div class="card-body ">
-                    <h6 class="card-category text-gray">Card 1</h6>
-                    <h4 class="card-title">card title</h4>
-                    <p class="card-description">Experienced designer and developer
-                    New to freelance
-                    Great intro prices</p>
-                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
-                  </div>
-                </div>
-
-
-            <!-- Test Section For Carousel Div -->
-
-              <div class="row">
-            <div class="col-md-4">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <!-- <a href="#pablo"> -->
-                    <div class="container iframe-container">
-
-                      <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
-                    </div>
-                    <!-- </a> -->
+        <!-- Test Neon Sign Single-->
+        <div class="container">
+          <div class="section text-center main-section-al">
+            <div id="prices" class="row">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
                   </div>
                   <div class="card-body ">
                     <h6 class="card-category text-gray">Card 1</h6>
@@ -186,15 +205,35 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- Test Neon Card Single Featured -->
+            <div class="card card-nav-tabs featured-card-al">
+              <!-- <h4 class="card-header card-header-info" id="featured-card-header-tertiary">Featured</h4> -->
+              <div class="card-header card-header-info neon-text-container">
+                Pricing
+                <!-- costs/plans -->
+              </div>
+              <div class="card-body">
+                <h4 class="card-title card-title-al">Special title treatment</h4>
+                <p class="card-text p-al">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#0" class="btn btn-primary al-btn-tertiary">Go somewhere</a>
+              </div>
+            </div>
+
+      <!-- Test Neon Sign Triple -->
+      <div class="container">
+        <div class="section text-center main-section-al">
+          <div id="prices" class="row">
 
             <div class="col-md-4">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <!-- <a href="#pablo"> -->
-                    <div class="container iframe-container">
-                      <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
-                    </div>
-                    <!-- </a> -->
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
                   </div>
                   <div class="card-body ">
                     <h6 class="card-category text-gray">Card 1</h6>
@@ -205,16 +244,15 @@
                     <a href="#pablo" class="btn btn-info btn-round">Follow</a>
                   </div>
                 </div>
-                </div>
+              </div>
+            </div>
 
             <div class="col-md-4">
-                <div class="card card-profile">
-                  <div class="card-avatar">
-                    <!-- <a href="#pablo"> -->
-                    <div class="container iframe-container">
-                      <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
-                    </div>
-                    <!-- </a> -->
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
                   </div>
                   <div class="card-body ">
                     <h6 class="card-category text-gray">Card 1</h6>
@@ -225,7 +263,115 @@
                     <a href="#pablo" class="btn btn-info btn-round">Follow</a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
+                  </div>
+                  <div class="card-body ">
+                    <h6 class="card-category text-gray">Card 1</h6>
+                    <h4 class="card-title">card title</h4>
+                    <p class="card-description">Experienced designer and developer
+                    New to freelance
+                    Great intro prices</p>
+                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                  </div>
                 </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card card-profile">
+            <div class="card-avatar">
+              <!-- <a href="#pablo"> -->
+              <div class="container iframe-container">
+
+                <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+              </div>
+              <!-- </a> -->
+            </div>
+            <div class="card-body ">
+              <h6 class="card-category text-gray">Card 1</h6>
+              <h4 class="card-title">card title</h4>
+              <p class="card-description">Experienced designer and developer
+              New to freelance
+              Great intro prices</p>
+              <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+            </div>
+          </div>
+
+
+          <!-- Test Section For Carousel Div -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
 
             <!-- End Of Test Section For Carousel Div -->
 
