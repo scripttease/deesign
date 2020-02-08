@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'rafalebg';
+    src: url('fonts/rafale_bg-webfont.eot');
+    src: url('fonts/rafale_bg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rafale_bg-webfont.woff') format('woff'),
+         url('fonts/rafale_bg-webfont.ttf') format('truetype'),
+         url('fonts/rafale_bg-webfont.svg#rafalebg') format('svg');
+}

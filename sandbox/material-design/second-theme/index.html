@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="/fonts/MetropolisExtraLight/MetropolisExtraLight.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisLight/MetropolisLight.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisRegular/MetropolisRegular.css"/>
+    <link rel="stylesheet" href="/fonts/MetropolisThin/MetropolisThin.css"/>
+    <link rel="stylesheet" href="/fonts/Arvo/ArvoRegular.css"/>
+    <link rel="stylesheet" href="/fonts/Arvo/ArvoBold.css"/>
+    <link rel="stylesheet" href="/fonts/rafaleru/rafaleru.css"/>
+    <link rel="stylesheet" href="/fonts/rafalebg/rafalebg.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="/assets/css/material-kit.css" rel="stylesheet" />
+    <!-- <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" /> -->
+    <!-- DeeSign Styles -->
+    <link rel="stylesheet" href="/sandbox/material-design/second-theme/assets/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <!-- #TODO add min and map css files for optimisation -->
+    <title>DeeSign</title>
+  </head>
+
+  <body>
+
+    <!-- SVG hosting hexagon link -->
+    <!-- #NOTE #IMPORTANT Adding class defs-only means css animations fail -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+      <symbol id="hosting-hexagon-icon">
+      <path id="hosting-server" class="primary-f-dark-s" d="M216.5 284.5V113.5H307.5V284.5H216.5Z" fill="black" stroke="white" stroke-width="3"/>
+      <path id="hosting-slot1" class="dark-f-light-s" d="M295 142.25C295 143.769 292.312 145 288.999 145H234.998C231.685 145 229 143.769 229 142.25V136.75C229 135.231 231.685 134 234.998 134H288.999C292.312 134 295 135.231 295 136.75V142.25Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-slot2" class="dark-f-light-s" d="M295 194.596C295 197.284 292.312 199.462 288.999 199.462H234.998C231.685 199.462 229 197.284 229 194.596V184.865C229 182.178 231.685 180 234.998 180H288.999C292.312 180 295 182.178 295 184.865V194.596Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-slot3"  class="dark-f-light-s" d="M295 164.25C295 165.769 292.312 167 288.999 167H234.998C231.685 167 229 165.769 229 164.25V158.75C229 157.231 231.685 156 234.998 156H288.999C292.312 156 295 157.231 295 158.75V164.25Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="hosting-screen" d="M77.2799 211C71.0815 211 66 216.131 66 222.374V324.638C66 330.881 71.0815 336 77.2799 336H250.72C256.918 336 262 330.881 262 324.638V222.374C262 216.131 256.918 211 250.72 211H77.2799ZM77.2799 217.507H250.72C253.451 217.507 255.54 219.623 255.54 222.374V324.638C255.54 327.39 253.451 329.493 250.72 329.493H77.2799C74.5485 329.493 72.4602 327.39 72.4602 324.638V222.374C72.4602 219.623 74.5486 217.507 77.2799 217.507Z" fill="black"/>
+      <path id="hosting-keyboard" class="svg-hex-keyboard-dark-f" d="M56 338C56 344.647 60.6943 350 66.5234 350H261.477C267.306 350 272 344.647 272 338H56Z" fill="black"/>
+      <path id="hosting-button" d="M147.897 340H180.103C180.6 340 181 340.446 181 341C181 341.554 180.6 342 180.103 342H147.897C147.4 342 147 341.555 147 341C147 340.447 147.4 340 147.897 340Z" fill="white"/>
+      <rect id="hosting-screen-fill" x="69.5" y="214.5" width="189" height="118" rx="10.5" fill="white" stroke="black" stroke-width="7"/> <path id="hosting-text" d="M138.469 257.617L141.914 239.406H147.17L141.492 265H136.184L132.018 247.879L127.852 265H122.543L116.865 239.406H122.121L125.584 257.582L129.803 239.406H134.268L138.469 257.617ZM169.969 257.617L173.414 239.406H178.67L172.992 265H167.684L163.518 247.879L159.352 265H154.043L148.365 239.406H153.621L157.084 257.582L161.303 239.406H165.768L169.969 257.617ZM201.469 257.617L204.914 239.406H210.17L204.492 265H199.184L195.018 247.879L190.852 265H185.543L179.865 239.406H185.121L188.584 257.582L192.803 239.406H197.268L201.469 257.617ZM144.375 294.137L154.395 297.67V302.592L139.26 296.176V292.027L154.395 285.611V290.533L144.375 294.137ZM160.178 307.197H156.398L165.82 279.406H169.6L160.178 307.197ZM182.414 294.084L172.201 290.516V285.629L187.512 292.045V296.176L172.201 302.609V297.705L182.414 294.084Z" fill="black"/>
+      <path id="circle1" d="M116.215 191.67C116.225 193.199 115.932 194.715 115.354 196.13C114.775 197.546 113.921 198.833 112.842 199.918C111.763 201.002 110.481 201.863 109.067 202.451C107.654 203.038 106.139 203.34 104.608 203.34C103.077 203.34 101.562 203.038 100.148 202.451C98.7351 201.863 97.4522 201.002 96.3733 199.918C95.2945 198.833 94.441 197.546 93.8621 196.13C93.2832 194.715 92.9903 193.199 93.0002 191.67C92.9903 190.141 93.2832 188.625 93.8621 187.21C94.441 185.794 95.2945 184.507 96.3733 183.423C97.4522 182.338 98.7351 181.477 100.148 180.89C101.562 180.302 103.077 180 104.608 180C106.139 180 107.654 180.302 109.067 180.89C110.481 181.477 111.763 182.338 112.842 183.423C113.921 184.507 114.775 185.794 115.354 187.21C115.932 188.625 116.225 190.141 116.215 191.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle3" class="test" d="M158.215 153.67C158.225 155.199 157.932 156.715 157.354 158.13C156.775 159.546 155.921 160.833 154.842 161.918C153.764 163.002 152.481 163.863 151.067 164.451C149.654 165.038 148.139 165.34 146.608 165.34C145.077 165.34 143.562 165.038 142.148 164.451C140.735 163.863 139.452 163.002 138.373 161.918C137.294 160.833 136.441 159.546 135.862 158.13C135.283 156.715 134.99 155.199 135 153.67C134.99 152.141 135.283 150.625 135.862 149.21C136.441 147.794 137.294 146.507 138.373 145.423C139.452 144.338 140.735 143.477 142.148 142.89C143.562 142.302 145.077 142 146.608 142C148.139 142 149.654 142.302 151.067 142.89C152.481 143.477 153.764 144.338 154.842 145.423C155.921 146.507 156.775 147.794 157.354 149.21C157.932 150.625 158.225 152.141 158.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle4" d="M198.215 153.67C198.225 155.199 197.932 156.715 197.354 158.13C196.775 159.546 195.921 160.833 194.842 161.918C193.764 163.002 192.481 163.863 191.067 164.451C189.654 165.038 188.139 165.34 186.608 165.34C185.077 165.34 183.562 165.038 182.148 164.451C180.735 163.863 179.452 163.002 178.373 161.918C177.294 160.833 176.441 159.546 175.862 158.13C175.283 156.715 174.99 155.199 175 153.67C174.99 152.141 175.283 150.625 175.862 149.21C176.441 147.794 177.294 146.507 178.373 145.423C179.452 144.338 180.735 143.477 182.148 142.89C183.562 142.302 185.077 142 186.608 142C188.139 142 189.654 142.302 191.067 142.89C192.481 143.477 193.764 144.338 194.842 145.423C195.921 146.507 196.775 147.794 197.354 149.21C197.932 150.625 198.225 152.141 198.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="circle2" d="M116.215 153.67C116.225 155.199 115.932 156.715 115.354 158.13C114.775 159.546 113.921 160.833 112.842 161.918C111.764 163.002 110.481 163.863 109.067 164.451C107.654 165.038 106.139 165.34 104.608 165.34C103.077 165.34 101.562 165.038 100.148 164.451C98.7351 163.863 97.4522 163.002 96.3733 161.918C95.2945 160.833 94.441 159.546 93.8621 158.13C93.2833 156.715 92.9903 155.199 93.0002 153.67C92.9903 152.141 93.2833 150.625 93.8621 149.21C94.441 147.794 95.2945 146.507 96.3733 145.423C97.4522 144.338 98.7351 143.477 100.148 142.89C101.562 142.302 103.077 142 104.608 142C106.139 142 107.654 142.302 109.067 142.89C110.481 143.477 111.764 144.338 112.842 145.423C113.921 146.507 114.775 147.794 115.354 149.21C115.932 150.625 116.225 152.141 116.215 153.67Z" stroke="black" stroke-width="5.4028" stroke-linejoin="round"/>
+      <path id="hosting-hexagon" class="primary-s" d="M209 11.42L408.69 126.71V357.29L209 472.58L9.31 357.29L9.31001 126.71L209 11.42Z" stroke="black" stroke-width="18.446" stroke-linecap="round"/>
+      </symbol>
+      </defs>
+    </svg>
+
+
+
+    <!-- SVG Logo link -->
+    <svg class="defs-only" class="display-none" style="display:none">
+      <symbol>
+      <defs class="display-none" id="svg-logo-head"></defs>
+      <g id="svg-icon" featurekey="k2wLtp-0" transform="matrix(0.9449414717647981,0,0,0.9449414717647981,185.25292821409292,53.36877933837371)" fill="#ffffff"><path xmlns="http://www.w3.org/2000/svg" fill="#ffffff" d="M88.509,20.788l-10.678-7.208c-0.44-0.298-0.961-0.457-1.493-0.457H57.652V3.337  c0-1.475-1.194-2.669-2.669-2.669h-9.967c-1.474,0-2.669,1.195-2.669,2.669v9.787H22.951c-1.474,0-2.669,1.195-2.669,2.669v14.415  c0,1.474,1.195,2.669,2.669,2.669h19.397v7.564H23.662c-0.533,0-1.052,0.159-1.493,0.457l-10.678,7.207  c-0.736,0.497-1.176,1.325-1.176,2.213c0,0.886,0.44,1.716,1.176,2.212l10.677,7.208c0.442,0.297,0.961,0.457,1.494,0.457h18.686  v34.969c0,1.474,1.195,2.669,2.669,2.669h9.967c1.475,0,2.669-1.195,2.669-2.669V60.195h19.396c1.475,0,2.67-1.195,2.67-2.67V43.11  c0-1.474-1.195-2.669-2.67-2.669H57.652v-7.564h18.686c0.532,0,1.053-0.159,1.493-0.457l10.678-7.208  c0.735-0.496,1.176-1.326,1.176-2.212S89.244,21.284,88.509,20.788z M47.686,6.006h4.627v7.118h-4.627V6.006z M52.313,92.494h-4.627  V60.195h4.627V92.494z M74.38,54.856H54.983h-9.967H24.479l-6.723-4.539l6.723-4.538h20.538h9.967H74.38V54.856z M52.313,40.441  h-4.627v-7.564h4.627V40.441z M75.521,27.539H54.983h-9.967H25.62v-9.076h19.396h9.967h20.538L82.244,23L75.521,27.539z"></path></g>
+
+      <g id="svg-logo-text" featurekey="wTfgVX-0" transform="matrix(4.0832716586868925,0,0,4.0832716586868925,54.73019772808823,130.58205874593915)" fill="#ffffff"><path d="M0.80078 5.195 l5.6836 0 q1.015625 0 1.948242188 0.263671875 t1.7383 0.74219 t1.4648 1.1475 t1.1279 1.4893 t0.72266 1.7676 t0.25391 1.9727 t-0.25391 1.9727 t-0.72266 1.7725 t-1.1279 1.5039 t-1.4648 1.1621 t-1.7383 0.74707 t-1.9482 0.26367 l-5.6836 0 l0 -2.6758 l1.1816 0 l0 -9.4434 l-1.1816 0 l0 -2.6855 z M5.2246 7.881 l0 9.4434 l1.2402 0 q0.791015625 0 1.494140625 -0.37109375 t1.2207 -1.0107 t0.82031 -1.5039 t0.30273 -1.8604 q0 -0.986328125 -0.302734375 -1.845703125 t-0.82031 -1.4941 t-1.2207 -0.99609 t-1.4941 -0.36133 l-1.2402 0 z M17.7441375 15.5762 l0.029297 0.30273 q0.107421875 0.439453125 0.3662109375 0.771484375 t0.61035 0.55664 t0.78125 0.33691 t0.86914 0.1123 t0.83496 -0.053711 t0.7666 -0.14648 t0.72266 -0.21484 t0.71289 -0.25879 l1.0742 2.002 q-0.556640625 0.341796875 -1.020507813 0.5810546875 t-0.93262 0.39551 t-0.99609 0.22949 t-1.2305 0.073242 q-1.318359375 0 -2.34375 -0.4345703125 t-1.7236 -1.1768 t-1.0645 -1.7383 t-0.36621 -2.1094 t0.38574 -2.0898 t1.0889 -1.7041 t1.6797 -1.1475 t2.168 -0.41992 t2.1143 0.39551 t1.5576 1.0938 t0.97656 1.6406 t0.37109 2.0264 q0.029296875 0.244140625 0.0341796875 0.4833984375 t-0.014648 0.49316 l-7.4512 0 z M20.0781375 11.8848 q-0.546875 0 -0.9326171875 0.1318359375 t-0.64941 0.36133 t-0.41992 0.52246 t-0.24414 0.61523 l4.2285 0 q-0.068359375 -0.33203125 -0.1953125 -0.625 t-0.35156 -0.51758 t-0.57129 -0.35645 t-0.86426 -0.13184 z M29.32616875 15.5762 l0.029297 0.30273 q0.107421875 0.439453125 0.3662109375 0.771484375 t0.61035 0.55664 t0.78125 0.33691 t0.86914 0.1123 t0.83496 -0.053711 t0.7666 -0.14648 t0.72266 -0.21484 t0.71289 -0.25879 l1.0742 2.002 q-0.556640625 0.341796875 -1.020507813 0.5810546875 t-0.93262 0.39551 t-0.99609 0.22949 t-1.2305 0.073242 q-1.318359375 0 -2.34375 -0.4345703125 t-1.7236 -1.1768 t-1.0645 -1.7383 t-0.36621 -2.1094 t0.38574 -2.0898 t1.0889 -1.7041 t1.6797 -1.1475 t2.168 -0.41992 t2.1143 0.39551 t1.5576 1.0938 t0.97656 1.6406 t0.37109 2.0264 q0.029296875 0.244140625 0.0341796875 0.4833984375 t-0.014648 0.49316 l-7.4512 0 z M31.66016875 11.8848 q-0.546875 0 -0.9326171875 0.1318359375 t-0.64941 0.36133 t-0.41992 0.52246 t-0.24414 0.61523 l4.2285 0 q-0.068359375 -0.33203125 -0.1953125 -0.625 t-0.35156 -0.51758 t-0.57129 -0.35645 t-0.86426 -0.13184 z M45.7227 9.365 q-0.048828125 -0.341796875 -0.2392578125 -0.64453125 t-0.48828 -0.52246 t-0.67383 -0.34668 t-0.78613 -0.12695 q-0.37109375 0 -0.69335375 0.078125 t-0.56152 0.23926 t-0.38086 0.41504 t-0.1416 0.60547 q0 0.439453125 0.1904296875 0.6982421875 t0.48828 0.4248 t0.65918 0.26367 t0.70313 0.21484 l2.6855 0.89844 q0.556640625 0.1953125 1.044921875 0.537109375 t0.84473 0.83008 t0.56152 1.123 t0.20508 1.4258 q0 1.07421875 -0.3955078125 1.962890625 t-1.1084 1.5234 t-1.709 0.98633 t-2.207 0.35156 q-0.849609375 0 -1.606445313 -0.1904296875 t-1.3818 -0.55176 t-1.0938 -0.86426 t-0.73242 -1.1377 l-1.0059 0 l0 -2.9395 l3.5352 0 l0 0.60547 q0 0.439453125 0.1416015625 0.810546875 t0.4248 0.64453 t0.71289 0.4248 t1.0059 0.15137 q0.87890625 0 1.337890625 -0.4052734375 t0.45898 -1.1279 q0 -0.37109375 -0.1611328125 -0.6201171875 t-0.41504 -0.41992 t-0.56641 -0.28809 t-0.61523 -0.21484 l-2.2363 -0.72266 q-0.634765625 -0.1953125 -1.225585938 -0.546875 t-1.0449 -0.87891 t-0.72266 -1.2354 t-0.26855 -1.6162 q0 -1.0546875 0.390625 -1.879882813 t1.0938 -1.3916 t1.6699 -0.85938 t2.1191 -0.29297 q0.908203125 0 1.6796875 0.2099609375 t1.3818 0.56152 t1.0352 0.80566 t0.64941 0.94238 l0.97656 0 l0 2.9492 l-3.5352 0 l0 -0.85938 z M50.439453125 9.883 l4.541 0 l0 7.4414 l1.4063 0 l0 2.6758 l-5.9473 0 l0 -2.6758 l1.5234 0 l0 -4.7656 l-1.5234 0 l0 -2.6758 z M51.806603125 6.621 q0 -0.361328125 0.1318359375 -0.6787109375 t0.36621 -0.55176 t0.55176 -0.37109 t0.68848 -0.13672 q0.3515625 0 0.6640625 0.13671875 t0.54688 0.37109 t0.37109 0.55176 t0.13672 0.67871 t-0.13672 0.67871 t-0.37109 0.55176 t-0.54688 0.37109 t-0.66406 0.13672 q-0.37109375 0 -0.6884765625 -0.13671875 t-0.55176 -0.37109 t-0.36621 -0.55176 t-0.13184 -0.67871 z M65.664046875 19.47266 q-0.546875 0.3125 -1.09375 0.44921875 t-1.1133 0.13672 q-1.171875 0 -2.158203125 -0.400390625 t-1.7041 -1.1084 t-1.1182 -1.6748 t-0.40039 -2.0996 q0 -1.064453125 0.3857421875 -2.006835938 t1.0791 -1.6504 t1.6602 -1.1182 t2.0996 -0.41992 q0.693359375 0.009765625 1.274414063 0.146484375 t1.0889 0.37109 l0 -0.21484 l2.959 0 l0 9.6973 q0 1.279296875 -0.439453125 2.211914063 t-1.1768 1.543 t-1.7139 0.9082 t-2.0508 0.29785 q-1.328125 0 -2.456054688 -0.361328125 t-2.0068 -0.97656 l1.2207 -2.168 q0.673828125 0.4296875 1.46484375 0.6787109375 t1.7578 0.24902 q0.52734375 0 0.9716796875 -0.1171875 t0.77148 -0.39551 t0.5127 -0.74707 t0.18555 -1.1816 l0 -0.048828 z M63.554646875 17.3535 q0.68359375 0 1.235351563 -0.3466796875 t0.87402 -0.91309 l0.019531 -2.4609 q-0.33203125 -0.615234375 -0.908203125 -0.9765625 t-1.25 -0.37109 q-0.478515625 0.009765625 -0.9375 0.1904296875 t-0.7959 0.5127 t-0.53223 0.78613 t-0.19531 1.0107 q0 0.5859375 0.1953125 1.064453125 t0.52734 0.81055 t0.78613 0.5127 t0.98145 0.18066 z M79.12113125 14.1797 q0 -0.849609375 -0.44921875 -1.333007813 t-1.1914 -0.4834 q-0.5078125 0 -1.025390625 0.224609375 t-1.0059 0.83984 l0 3.8965 l1.6406 0 l0 2.6758 l-6.2891 0 l0 -2.6758 l1.4844 0 l0 -4.7656 l-1.4648 0 l0 -2.6758 l4.6094 0 l0 0.88867 q0.634765625 -0.498046875 1.420898438 -0.7861328125 t1.6553 -0.28809 q1.826171875 0 2.8125 1.020507813 t0.98633 2.9834 l0 3.623 l1.4355 0 l0 2.6758 l-4.6191 0 l0 -5.8203 z M84.96093375 18.418 q0 -0.390625 0.1416015625 -0.732421875 t0.40039 -0.60547 t0.61035 -0.41504 t0.75195 -0.15137 q0.380859375 0 0.7275390625 0.1513671875 t0.60547 0.41016 t0.40527 0.61035 t0.14648 0.73242 q0 0.390625 -0.1513671875 0.7421875 t-0.40527 0.60547 t-0.5957 0.40527 t-0.73242 0.15137 q-0.41015625 0 -0.7568359375 -0.1513671875 t-0.60547 -0.40527 t-0.40039 -0.60059 t-0.1416 -0.74707 z"></path></g>
+
+      <g id="svg-slogan" featurekey="XDIVJY-0" transform="matrix(1.2096692695134679,0,0,1.2096692695134679,4.20161904351725,231.37101295680884)" fill="#ffffff"><path d="M5.88 5.48 c1.84 0 3.2 0.54006 4.08 1.6201 l-1.56 1.42 c-0.24 -0.37334 -0.58 -0.67334 -1.02 -0.9 s-0.94666 -0.34 -1.52 -0.34 c-0.82666 0 -1.49 0.20334 -1.99 0.61 s-0.75 0.93 -0.75 1.57 c0 1.0667 0.70666 1.8133 2.12 2.24 l1.78 0.58 c1 0.32 1.7633 0.76666 2.29 1.34 s0.79 1.36 0.79 2.36 c0 1.3067 -0.46334 2.3634 -1.39 3.17 s-2.1034 1.21 -3.53 1.21 c-2.04 0 -3.5466 -0.65334 -4.52 -1.96 l1.58 -1.36 c0.30666 0.48 0.72666 0.85334 1.26 1.12 s1.1133 0.4 1.74 0.4 c0.78666 0 1.4533 -0.22666 2 -0.68 s0.82 -1.0133 0.82 -1.68 c0 -0.49334 -0.16666 -0.90668 -0.5 -1.24 s-0.93334 -0.63334 -1.8 -0.9 l-1.26 -0.42 c-1.2667 -0.42666 -2.1534 -0.97 -2.66 -1.63 s-0.76 -1.51 -0.76 -2.55 c0 -1.1067 0.44666 -2.0466 1.34 -2.82 s2.0466 -1.16 3.46 -1.16 z M28.492000000000004 5.84 l0 14.16 l-1.92 0 l0 -14.16 l1.92 0 z M52.284000000000006 5.48 c2.36 0 4.1134 0.6133 5.26 1.84 l-1.36 1.46 c-1.0533 -1 -2.36 -1.5 -3.92 -1.5 s-2.84 0.53666 -3.84 1.61 s-1.5 2.4166 -1.5 4.03 c0 1.6267 0.53 2.9734 1.59 4.04 s2.3634 1.6 3.91 1.6 c1.4667 0 2.6266 -0.24666 3.48 -0.74 l0 -3.94 l-3.14 0 l0 -1.8 l5.06 0 l0 6.98 c-0.69334 0.41334 -1.53 0.73334 -2.51 0.96 s-1.93 0.34 -2.85 0.34 c-2.2266 0 -4.0466 -0.69334 -5.46 -2.08 s-2.12 -3.1734 -2.12 -5.36 c0 -2.1066 0.69666 -3.8734 2.09 -5.3 s3.1634 -2.14 5.31 -2.14 z M77.476 5.84 l7.8 11.64 l0.04 0 l0 -11.64 l1.92 0 l0 14.16 l-2.44 0 l-7.88 -11.64 l-0.04 0 l0 11.64 l-1.92 0 l0 -14.16 l2.52 0 z M109.588 5.84 c1.3733 0 2.4566 0.34 3.25 1.02 s1.19 1.66 1.19 2.94 c0 1.24 -0.39334 2.21 -1.18 2.91 s-1.8733 1.05 -3.26 1.05 l-3.16 0 l0 6.24 l-1.92 0 l0 -14.16 l5.08 0 z M109.02799999999999 12.08 c1 0 1.7433 -0.18336 2.23 -0.55002 s0.73 -0.94332 0.73 -1.73 c0 -1.52 -0.98666 -2.28 -2.96 -2.28 l-2.6 0 l0 4.56 l2.6 0 z M136.49999999999997 5.48 c2.1066 0 3.8634 0.69998 5.27 2.1 s2.11 3.18 2.11 5.34 c0 1.3733 -0.31334 2.63 -0.94 3.77 s-1.51 2.0366 -2.65 2.69 s-2.4034 0.98 -3.79 0.98 c-1.3733 0 -2.6266 -0.32334 -3.76 -0.97 s-2.02 -1.54 -2.66 -2.68 s-0.96 -2.4034 -0.96 -3.79 c0 -2.1066 0.69 -3.8734 2.07 -5.3 s3.15 -2.14 5.31 -2.14 z M131.15999999999997 12.92 c0 1.6 0.49998 2.94 1.5 4.02 s2.28 1.62 3.84 1.62 c1.5333 0 2.8066 -0.53334 3.82 -1.6 s1.52 -2.4134 1.52 -4.04 c0 -1.6133 -0.5 -2.9566 -1.5 -4.03 s-2.2866 -1.61 -3.86 -1.61 c-1.52 0 -2.7866 0.53334 -3.8 1.6 s-1.52 2.4134 -1.52 4.04 z M164.33199999999997 5.48 c1.84 0 3.2 0.54006 4.08 1.6201 l-1.56 1.42 c-0.24 -0.37334 -0.58 -0.67334 -1.02 -0.9 s-0.94666 -0.34 -1.52 -0.34 c-0.82666 0 -1.49 0.20334 -1.99 0.61 s-0.75 0.93 -0.75 1.57 c0 1.0667 0.70666 1.8133 2.12 2.24 l1.78 0.58 c1 0.32 1.7633 0.76666 2.29 1.34 s0.79 1.36 0.79 2.36 c0 1.3067 -0.46334 2.3634 -1.39 3.17 s-2.1034 1.21 -3.53 1.21 c-2.04 0 -3.5466 -0.65334 -4.52 -1.96 l1.58 -1.36 c0.30666 0.48 0.72666 0.85334 1.26 1.12 s1.1133 0.4 1.74 0.4 c0.78666 0 1.4533 -0.22666 2 -0.68 s0.82 -1.0133 0.82 -1.68 c0 -0.49334 -0.16666 -0.90668 -0.5 -1.24 s-0.93334 -0.63334 -1.8 -0.9 l-1.26 -0.42 c-1.2667 -0.42666 -2.1534 -0.97 -2.66 -1.63 s-0.76 -1.51 -0.76 -2.55 c0 -1.1067 0.44666 -2.0466 1.34 -2.82 s2.0466 -1.16 3.46 -1.16 z M194.46399999999997 5.84 l0 1.8 l-4.56 0 l0 12.36 l-1.92 0 l0 -12.36 l-4.56 0 l0 -1.8 l11.04 0 z M232.04799999999997 5.84 l4.5 10.72 l0.08 0 l4.46 -10.72 l2.86 0 l0 14.16 l-1.92 0 l0 -11.64 l-0.04 0 l-4.78 11.64 l-1.28 0 l-4.78 -11.64 l-0.04 0 l0 11.64 l-1.92 0 l0 -14.16 l2.86 0 z M261.52 5.84 l3.86 6.22 l3.98 -6.22 l2.34 0 l-5.36 8.12 l0 6.04 l-1.92 0 l0 -6.04 l-5.36 -8.12 l2.46 0 z M310.204 5.48 c1.84 0 3.2 0.54006 4.08 1.6201 l-1.56 1.42 c-0.24 -0.37334 -0.58 -0.67334 -1.02 -0.9 s-0.94666 -0.34 -1.52 -0.34 c-0.82666 0 -1.49 0.20334 -1.99 0.61 s-0.75 0.93 -0.75 1.57 c0 1.0667 0.70666 1.8133 2.12 2.24 l1.78 0.58 c1 0.32 1.7633 0.76666 2.29 1.34 s0.79 1.36 0.79 2.36 c0 1.3067 -0.46334 2.3634 -1.39 3.17 s-2.1034 1.21 -3.53 1.21 c-2.04 0 -3.5466 -0.65334 -4.52 -1.96 l1.58 -1.36 c0.30666 0.48 0.72666 0.85334 1.26 1.12 s1.1133 0.4 1.74 0.4 c0.78666 0 1.4533 -0.22666 2 -0.68 s0.82 -1.0133 0.82 -1.68 c0 -0.49334 -0.16666 -0.90668 -0.5 -1.24 s-0.93334 -0.63334 -1.8 -0.9 l-1.26 -0.42 c-1.2667 -0.42666 -2.1534 -0.97 -2.66 -1.63 s-0.76 -1.51 -0.76 -2.55 c0 -1.1067 0.44666 -2.0466 1.34 -2.82 s2.0466 -1.16 3.46 -1.16 z M332.81600000000003 5.84 l0 14.16 l-1.92 0 l0 -14.16 l1.92 0 z M359.528 5.84 l0 1.8 l-4.56 0 l0 12.36 l-1.92 0 l0 -12.36 l-4.56 0 l0 -1.8 l11.04 0 z M384.34000000000003 5.84 l0 1.8 l-7.22 0 l0 4.22 l6.72 0 l0 1.8 l-6.72 0 l0 4.54 l7.58 0 l0 1.8 l-9.5 0 l0 -14.16 l9.14 0 z"></path></g>
+      </symbol>    
+    </svg>
+
+
+
+    <!-- SVG Content Hexagon -->
+
+    <!-- #NOTE #IMPORTANT Adding class defs-only means css animations fail -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <defs>
+      <symbol id="content-hexagon-icon">
+      <rect x="109" y="149" width="69" height="105" rx="5" fill="#C4C4C4" id="lap-col"/>
+      <rect x="202" y="149" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row1"/>
+      <rect x="202" y="189" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row2"/>
+      <rect x="202" y="228" width="104" height="27" rx="5" fill="#C4C4C4" id="lap-row3"/>
+      <path d="M96.2018 123C88.4003 123 82.0045 129.493 82.0045 137.392V266.791C82.0045 274.691 88.4003 281.168 96.2018 281.168H314.5C322.301 281.168 328.697 274.691 328.697 266.791V137.392C328.697 129.493 322.301 123 314.5 123H96.2018ZM96.2018 131.233H314.5C317.937 131.233 320.566 133.911 320.566 137.392V266.791C320.566 270.273 317.937 272.935 314.5 272.935H96.2018C92.764 272.935 90.1355 270.273 90.1355 266.791V137.392C90.1355 133.911 92.7641 131.233 96.2018 131.233Z" fill="black"/>
+      <path d="M69 283.545C69 292.235 74.9266 299.234 82.2859 299.234H328.416C335.775 299.234 341.701 292.235 341.701 283.545H69Z" fill="black"/>
+      <path d="M185.048 286.838H225.661C226.287 286.838 226.792 287.349 226.792 287.984C226.792 288.618 226.287 289.129 225.661 289.129H185.048C184.421 289.129 183.917 288.619 183.917 287.984C183.917 287.35 184.421 286.838 185.048 286.838Z" fill="white"/>
+      <path d="M348.059 355.498C348.059 358.724 345.186 361.339 341.642 361.339H256.061C252.517 361.339 249.644 358.724 249.644 355.498V188.426C249.644 185.2 252.517 182.584 256.061 182.584H341.642C345.186 182.584 348.059 185.2 348.059 188.426V355.498Z" fill="black" stroke="black" stroke-width="2.82347"/>
+      <path d="M310.396 188.998C310.396 189.707 309.749 190.36 308.851 190.36H288.851C287.952 190.36 287.305 189.707 287.305 188.998C287.305 188.289 287.952 187.636 288.851 187.636H308.851C309.749 187.636 310.396 188.289 310.396 188.998Z" fill="#1A1A1A" stroke="white" stroke-width="0.999991"/>
+      <path d="M343.352 193.757H254.349V345.617H343.352V193.757Z" fill="white"/>
+      <path d="M311.351 354.72C311.351 355.863 310.333 356.789 309.078 356.789H288.623C287.368 356.789 286.351 355.863 286.351 354.72V350.582C286.351 349.439 287.368 348.513 288.623 348.513H309.078C310.333 348.513 311.351 349.439 311.351 350.582V354.72Z" fill="#1A1A1A" stroke="white" stroke-width="1.99998"/>
+      <path id="content-hexagon" class="primary-s" d="M209 11.42L408.69 126.71V357.29L209 472.58L9.31 357.29L9.31001 126.71L209 11.42Z" stroke="black" stroke-width="18.446" stroke-linecap="round"/>
+      <rect x="265" y="202" width="68" height="67" rx="5" fill="#C4C4C4" id="mob-row1"/>
+      <rect x="265" y="281" width="68" height="22" rx="5" fill="#C4C4C4" id="mob-row2"/>
+      <rect x="265" y="313" width="68" height="22" rx="5" fill="#C4C4C4" id="mob-row3"/>
+      </symbol>
+      </defs>
+    </svg>
+
+
+    <main class="page" role="main">
+
+      <!-- Navigation Menu Bar Top -->
+      <nav class="navbar navbar-al navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg"  color-on-scroll="100">
+        <div class="container">
+          <div class="navbar-translate">
+            <a class="navbar-brand" id="logo-text-navbar" href="https://demos.creative-tim.com/material-kit/index.html">DeeSign.</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <!-- <i class="material-icons">apps</i> Template -->
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#prices" class="nav-link">
+                  Prices
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Page Header -->
+      <!-- #TODO change the header positioning wrt breakpoints -->
+      <div class="page-header page-header-al header-filter" id="page-header-flex-container-al" > 
+        <div class="header-intro ">
+          <p>
+        Design &amp; Development <span class="emphasis">Experience</span>
+          </p>
+          <p>
+          <span class="emphasis">Newly</span> Freelance 
+          </p>
+          <p>
+          Great <span class="emphasis">Intro</span> Prices
+          </p>
+        </div>
+      </div>
+
+      <!-- #TODO add remaining media queries for header and section one -->
+      <div class="main main-raised main-raised-al">
+        <div class="container">
+          <div class="section text-center" id="first-main-section-al">
+            <!-- <div class="card"> -->
+            <h3 class="title title-al">Signpost Your Site</h3>
+
+            <p>Your website is your advertisement, storefront, marketing campaign, brand identity... So it makes sense to give it some love.</p>
+
+            <!-- Content Design Hexagon -->
+            <div class="svg-icon-container container">
+              <svg width="70px" viewBox="0 0 418 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#content-hexagon-icon"></use>
+              </svg>
+            </div>
+
+            <p>Is your current site not doing you justice? Do you need help keeping it updated or maintained? </p>
+
+            <!-- maintenance image text maintenance -->
+            <!-- Hosting Hexagon -->
+            <div class="svg-icon-container container">
+              <svg width="70px" viewBox="0 0 418 484" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="#hosting-hexagon-icon"></use>
+              </svg>
+            </div>
+
+            <p>Together we can craft the perfect digital solution for you. Take advantage of my <a href="#">introductory offers</a> while I build my <a href="#">portfolio</a>.</p> 
+
+            <!-- marketing image text marketing? -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+            <!-- Neon Sign Banner -->
+              <div class="text-center main-section-al">
+                <!-- <h4 class="card-header card-header-info" id="featured-card-header-tertiary">Featured</h4> -->
+                <div class="neon-text-container banner">
+                  Pricing
+                  <!-- costs/plans -->
+                </div>
+                <div class="container">
+                  <div class="card card-nav-tabs featured-card-al overset-card-al">
+                    <div class="card-body">
+                      <h4 class="card-title card-title-al">Introductory Fixed Prices</h4>
+                      <p class="card-text p-al">To get started, you'll need to know whether you want a site you can edit yourself, like Wordpress, a simple, static site, or an e-commerce site. </p>
+
+
+          <div class="row">
+
+
+
+              <!-- Tabs on Plain Card -->
+            <div class="col-md-4">
+              <div class="card card-nav-tabs card-plain">
+                <div class="card-header card-header-danger">
+                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#updates" data-toggle="tab">Updates</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#history" data-toggle="tab">History</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active" id="home">
+                      <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                    </div>
+                    <div class="tab-pane" id="updates">
+                      <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                    </div>
+                    <div class="tab-pane" id="history">
+                      <p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- End Tabs on plain Card -->
+
+
+              <!-- Tabs with icons on Card -->
+            <div class="col-md-4">
+              <div class="card card-nav-tabs">
+                <div class="card-header card-header-primary">
+                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#profile" data-toggle="tab">
+                            <i class="material-icons">face</i> Profile
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#messages" data-toggle="tab">
+                            <i class="material-icons">chat</i> Messages
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#settings" data-toggle="tab">
+                            <i class="material-icons">build</i> Settings
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active" id="profile">
+                      <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                    </div>
+                    <div class="tab-pane" id="messages">
+                      <p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                    </div>
+                    <div class="tab-pane" id="settings">
+                      <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- End Tabs with icons on Card -->
+
+
+              <!-- Tabs on Plain Card -->
+            <div class="col-md-4">
+              <div class="card card-nav-tabs card-plain">
+                <div class="card-header card-header-danger">
+                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                  <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                      <ul class="nav nav-tabs" data-tabs="tabs">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
+                        </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#updates" data-toggle="tab">Updates</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#history" data-toggle="tab">History</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body ">
+                  <div class="tab-content text-center">
+                    <div class="tab-pane active" id="home">
+                      <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                    </div>
+                    <div class="tab-pane" id="updates">
+                      <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                    </div>
+                    <div class="tab-pane" id="history">
+                      <p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!-- End Tabs on plain Card -->
+
+
+          </div>
+
+
+
+                      <a href="#0" class="btn btn-primary al-btn-tertiary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- Test Neon Card Single Featured -->
+        <div class="container">
+          <div class="section text-center main-section-al">
+            <div class="card card-nav-tabs featured-card-al">
+              <!-- <h4 class="card-header card-header-info" id="featured-card-header-tertiary">Featured</h4> -->
+              <div class="card-header card-header-info neon-text-container">
+                Pricing
+                <!-- costs/plans -->
+              </div>
+              <div class="card-body">
+                <h4 class="card-title card-title-al">Introductory Fixed Prices</h4>
+                <p class="card-text p-al"></p>
+                <a href="#0" class="btn btn-primary al-btn-tertiary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Test Neon Sign Single-->
+        <div class="container">
+          <div class="section text-center main-section-al">
+            <div id="prices" class="row">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
+                  </div>
+                  <div class="card-body ">
+                    <h6 class="card-category text-gray">Card 1</h6>
+                    <h4 class="card-title">card title</h4>
+                    <p class="card-description">Experienced designer and developer
+                    New to freelance
+                    Great intro prices</p>
+                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- Test Neon Card Single Featured -->
+            <div class="card card-nav-tabs featured-card-al">
+              <!-- <h4 class="card-header card-header-info" id="featured-card-header-tertiary">Featured</h4> -->
+              <div class="card-header card-header-info neon-text-container">
+                Pricing
+                <!-- costs/plans -->
+              </div>
+              <div class="card-body">
+                <h4 class="card-title card-title-al">Special title treatment</h4>
+                <p class="card-text p-al">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#0" class="btn btn-primary al-btn-tertiary">Go somewhere</a>
+              </div>
+            </div>
+
+      <!-- Test Neon Sign Triple -->
+      <div class="container">
+        <div class="section text-center main-section-al">
+          <div id="prices" class="row">
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
+                  </div>
+                  <div class="card-body ">
+                    <h6 class="card-category text-gray">Card 1</h6>
+                    <h4 class="card-title">card title</h4>
+                    <p class="card-description">Experienced designer and developer
+                    New to freelance
+                    Great intro prices</p>
+                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
+                  </div>
+                  <div class="card-body ">
+                    <h6 class="card-category text-gray">Card 1</h6>
+                    <h4 class="card-title">card title</h4>
+                    <p class="card-description">Experienced designer and developer
+                    New to freelance
+                    Great intro prices</p>
+                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <div class="neon-text-container">
+                    Pricing
+                    <!-- costs/plans -->
+                  </div>
+                  <div class="card-body ">
+                    <h6 class="card-category text-gray">Card 1</h6>
+                    <h4 class="card-title">card title</h4>
+                    <p class="card-description">Experienced designer and developer
+                    New to freelance
+                    Great intro prices</p>
+                    <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card card-profile">
+            <div class="card-avatar">
+              <!-- <a href="#pablo"> -->
+              <div class="container iframe-container">
+
+                <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+              </div>
+              <!-- </a> -->
+            </div>
+            <div class="card-body ">
+              <h6 class="card-category text-gray">Card 1</h6>
+              <h4 class="card-title">card title</h4>
+              <p class="card-description">Experienced designer and developer
+              New to freelance
+              Great intro prices</p>
+              <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+            </div>
+          </div>
+
+
+          <!-- Test Section For Carousel Div -->
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card card-profile">
+                <div class="card-avatar">
+                  <!-- <a href="#pablo"> -->
+                  <div class="container iframe-container">
+                    <iframe class="neon-iframe" src="https://ntmaker.gfto.ru/newneontexten/?image_height=100&image_width=270&image_font_shadow_width=15&image_font_size=65&image_background_color=313131&image_text_color=FDBAFF&image_font_shadow_color=F08FFF&image_url=&image_text=I'm New&image_font_family=RafaleRU&" frameborder='no' scrolling='no' width="270" height="100"></iframe>
+                  </div>
+                  <!-- </a> -->
+                </div>
+                <div class="card-body ">
+                  <h6 class="card-category text-gray">Card 1</h6>
+                  <h4 class="card-title">card title</h4>
+                  <p class="card-description">Experienced designer and developer
+                  New to freelance
+                  Great intro prices</p>
+                  <a href="#pablo" class="btn btn-info btn-round">Follow</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- End Of Test Section For Carousel Div -->
+
+
+
+
+
+            <p class="card-description" >Benefit from my years of <a href="#">experience</a> while only paying a low, <a href="#">fixed cost</a> for your site</p>
+
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer footer-default" >
+        <div class="container">
+          <nav class="float-left">
+            <ul>
+              <li>
+                <a href="https://www.creative-tim.com/">
+                  Creative Tim
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright float-right">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear())
+            </script>, made with <i class="material-icons">favorite</i> by
+            <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
+          </div>
+        </div>
+      </footer>
+      <!--   My JS Files   -->
+      <script src="/assets/js/neon.js" type="text/javascript"></script>
+      <!--   Core JS Files   -->
+      <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+      <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+      <script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+      <script src="assets/js/plugins/moment.min.js"></script>
+      <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+      <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+      <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+      <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+      <!--  Google Maps Plugin  -->
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+      <!-- Place this tag in your head or just before your close body tag. -->
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+      <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+      <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script></body>
+</html>
+    </main>
+
+    </body>
+    </html>
