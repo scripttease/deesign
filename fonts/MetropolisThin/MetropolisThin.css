@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'MetropolisThin';
-    src: url('fonts/MetropolisThin.eot');
-    src: url('fonts/MetropolisThin.eot') format('embedded-opentype'),
-         url('fonts/MetropolisThin.woff2') format('woff2'),
-         url('fonts/MetropolisThin.woff') format('woff'),
-         url('fonts/MetropolisThin.ttf') format('truetype'),
-         url('fonts/MetropolisThin.svg#MetropolisThin') format('svg');
-}

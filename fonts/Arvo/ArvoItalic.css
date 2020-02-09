@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'ArvoItalic';
-    src: url('fonts/ArvoItalic.eot');
-    src: url('fonts/ArvoItalic.eot') format('embedded-opentype'),
-         url('fonts/ArvoItalic.woff2') format('woff2'),
-         url('fonts/ArvoItalic.woff') format('woff'),
-         url('fonts/ArvoItalic.ttf') format('truetype'),
-         url('fonts/ArvoItalic.svg#ArvoItalic') format('svg');
-}

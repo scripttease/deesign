@@ -7,17 +7,24 @@
   --color-dark: #424040;
   --color-light: #ffffff;
   --color-white: #ffffff;
-  --color-secondary: #c270be; /*pink*/
-  --color-primary: #75529f;   /*purple*/
+
+  --color-neon-pink: #FDBAFF;
+  /* --color-primary: #75529f;   /*purple*/
+  --color-primary: #5c2d94;   /*purple*/
+  --color-secondary: #e56cdf; /*pink*/
+  --color-tertiary: #1b065e; /*blue*/
+  --color-highlight: #16BAC5; /*teal*/
 
 }
 
+.all-fonts {
+}
+
+
  /* -- CHANGES TO THEME CSS OVERWRITTEN -- */ 
 
-
-
 .header-filter::before {
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 16BAC50, 0, 0.4) !important;
 }
 
 .page-header {
@@ -26,11 +33,70 @@
   justify-content: center;
 }
 
+p {
+  font-size: 16px;
+  color: #363636;
+}
+
+.info p,
+p.info,
+h4.card-description,
+p.card-description,
+h5.description,
+h4.description,
+li.card,
+.card li,
+p.description {
+  color: #363636;
+}
+
+
+a {
+  color: #7040aa;
+}
 #ichat{
     color: #00bcd4;
   font-size: 3.85rem;
 }
 
+.card.bg-rose {
+  /* background: linear-gradient(60deg, #ec407a, #1b065e); */
+  background: linear-gradient(60deg, var(--color-primary), var(--color-tertiary));
+}
+
+.nav-pills.nav-pills-rose .nav-item .nav-link.active {
+  background-color: var(--color-primary);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(118, 30, 233, 0.6);
+}
+
+
+.nav-pills.nav-pills-rose .nav-item .nav-link.active, .nav-pills.nav-pills-rose .nav-item .nav-link.active:focus, .nav-pills.nav-pills-rose .nav-item .nav-link.active:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(118, 30, 233, 0.6);
+    color: #fff;
+}
+
+
+.btn.btn-rose {
+    color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 2px 0 rgba(118, 30, 233, 0.14), 0 3px 1px -2px rgba(118, 30, 233, 0.2), 0 1px 5px 0 rgba(118, 30, 233, 0.12);
+}
+
+.btn.btn-rose:hover {
+    box-shadow: 0 14px 26px -12px rgba(118, 30, 233, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(118, 30, 233, 0.2);
+}
+
+.btn.btn-rose:hover {
+color: #fff;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+.contact-form {
+  text-align: left
+}
 
 /* -- END TO CHANGES TO THEME CSS OVERWRITTEN -- */ 
 
@@ -48,14 +114,15 @@
   background-image: url(../img/backround-neon-sign.jpg) !important;
 }
 
-
 div.header-intro  p {
-  font-family: "rafaleru", sans-serif !important;
   color: var(--color-light);
   font-size: 5vw;
   text-shadow: 3px -2px 2px #0f0e0f, -1px -1px 1em #d48bd6, 2px -3px 0.2em #673ab7;
   margin-bottom: 0px;
   line-height: 1.25;
+  font-weight: 400;
+  /* font-family: 'RafaleRU', Helvetica, Arial; */
+  font-family: Helvetica, "Roboto", Arial;
 }
 
 span.emphasis {
@@ -65,7 +132,9 @@ span.emphasis {
   text-shadow: 2px -1px 0em #0c0c0d73, -1.5px 0px 6px #fdfbfbc2, -1px 2px 0.5em #fcfafa;
 }
 
-
+p#testp {
+  font-family: 'Roboto', Helvetica, Arial;
+}
 
 h4#header-subtitle {
   /* text-align: center; */
@@ -84,12 +153,30 @@ h4#header-subtitle {
    margin: 0 auto;
    display: block;
    color: #fff;
-    background-color: #75529f;
-    border-color: #75529f;
-    box-shadow: 0 2px 2px 0 #75529f24, 0 3px 1px -2px #75529f33, 0 1px 5px 0 #75529f1f;
+    /* background-color: var(--color-primary); */
+    /* border-color: var(--color-primary); */
+    /* box-shadow: 0 2px 2px 0 #75529f24, 0 3px 1px -2px #75529f33, 0 1px 5px 0 #75529f1f; */
+    background-color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+    box-shadow: 0 2px 2px 0 #180f2424, 0 3px 1px -2px #01021733, 0 3px 5px 0 #00000e1f;
 }
  
 /* -- END HEADER -- */
+
+/* -- SIGNPOST (FIRST) SECTION -- */
+
+#ichat {
+  color: var(--color-tertiary);
+}
+
+#itick {
+  color: var(--color-highlight);
+}
+
+#iprint {
+  color: var(--color-secondary);
+}
+/* -- END SIGNPOST (FIRST) SECTION -- */
 
  /* -- NEON SIGNS -- */
 
@@ -112,9 +199,10 @@ h4#header-subtitle {
 
 .neon-text-container > span {
   text-shadow: 0 0 15px #F08FFF, 5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 10px #F08FFF, 0 0 100px #F08FFF, 0 0 500px #F08FFF;
+  font-weight: 400;
   font-family: 'RafaleRU', Helvetica, Arial;
   font-size: 65px;
-  color: #FDBAFF;
+  color: var(--color-neon-pink);
   font-size: 10vw;
 }
 
@@ -133,7 +221,7 @@ h4#header-subtitle {
   margin-top: -30px;
 }
 
-.main.main-raised.banner {
+.main.main-raised.after-banner {
   margin-top: -30px;
 }
 
@@ -170,7 +258,7 @@ ul.nav.nav-pills {
 }
 
 .card small {
-  font-size: 18px;
+  font-size: 0.5em;
 }
 
 .list-scroll ul {
@@ -192,3 +280,28 @@ ul.nav.nav-pills {
 }
 
 /*  -- END PRICING BANNER and CARD SECTION -- */ 
+
+
+ .btn.btn-tertiary {
+   width: 180px;
+   margin: 0 auto;
+   display: block;
+   color: #fff;
+    /* background-color: var(--color-primary); */
+    /* border-color: var(--color-primary); */
+    /* box-shadow: 0 2px 2px 0 #75529f24, 0 3px 1px -2px #75529f33, 0 1px 5px 0 #75529f1f; */
+    background-color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+    box-shadow: 0 2px 2px 0 #180f2424, 0 3px 1px -2px #01021733, 0 3px 5px 0 #00000e1f;
+}
+
+.btn.btn-tertiary:hover {
+    color: #fff;
+    background-color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+    border-top-color: rgb(112, 28, 126);
+    border-right-color: rgb(112, 28, 126);
+    border-bottom-color: rgb(112, 28, 126);
+    border-left-color: rgb(112, 28, 126);
+}
+

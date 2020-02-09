@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'MetropolisLight';
-    src: url('fonts/MetropolisLight.eot');
-    src: url('fonts/MetropolisLight.eot') format('embedded-opentype'),
-         url('fonts/MetropolisLight.woff2') format('woff2'),
-         url('fonts/MetropolisLight.woff') format('woff'),
-         url('fonts/MetropolisLight.ttf') format('truetype'),
-         url('fonts/MetropolisLight.svg#MetropolisLight') format('svg');
-}
