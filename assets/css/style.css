@@ -20,6 +20,9 @@
 .all-fonts {
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
  /* -- CHANGES TO THEME CSS OVERWRITTEN -- */ 
 
@@ -36,6 +39,10 @@
 p {
   font-size: 16px;
   color: #363636;
+}
+
+.section {
+    padding: 30px 0px;
 }
 
 .info p,
@@ -106,6 +113,13 @@ color: #fff;
   font-family: "ArvoBold", serif;
 }
 
+/* NAVBAR SCROLLING */
+
+#pricing-icon i {
+  font-size: 14px;
+  font-weight: 900;
+}
+
 /* -- END NAVBAR -- */
 
 /* -- HEADER -- */
@@ -132,9 +146,9 @@ span.emphasis {
   text-shadow: 2px -1px 0em #0c0c0d73, -1.5px 0px 6px #fdfbfbc2, -1px 2px 0.5em #fcfafa;
 }
 
-p#testp {
-  font-family: 'Roboto', Helvetica, Arial;
-}
+/* p#testp { */
+/*   font-family: 'Roboto', Helvetica, Arial; */
+/* } */
 
 h4#header-subtitle {
   /* text-align: center; */
@@ -305,3 +319,6 @@ ul.nav.nav-pills {
     border-left-color: rgb(112, 28, 126);
 }
 
+#got-cha {
+  display: none;
+}
