@@ -125,7 +125,11 @@ color: #fff;
 /* -- HEADER -- */
 
 .header-filter-neon {
-  background-image: url(../img/backround-neon-sign.jpg) !important;
+  background-image: url(../img/backround-neon-sign-optimised-3000.jpg) !important;
+}
+
+.no-link-styling {
+
 }
 
 div.header-intro  p {
@@ -321,4 +325,8 @@ ul.nav.nav-pills {
 
 #got-cha {
   display: none;
+}
+
+.highlight-text {
+  color: var(--color-tertiary);
 }
