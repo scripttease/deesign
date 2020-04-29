@@ -6,4 +6,5 @@
          url('fonts/ArvoBold.woff') format('woff'),
          url('fonts/ArvoBold.ttf') format('truetype'),
          url('fonts/ArvoBold.svg#ArvoBold') format('svg');
+         font-display: swap;
 }

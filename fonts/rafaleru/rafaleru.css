@@ -5,4 +5,5 @@
          url('fonts/rafale_ru-webfont.woff') format('woff'),
          url('fonts/rafale_ru-webfont.ttf') format('truetype'),
          url('fonts/rafale_ru-webfont.svg#rafaleru') format('svg');
+         font-display: swap;
 }
