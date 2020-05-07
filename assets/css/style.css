@@ -1,9 +1,11 @@
-:root{
+:root {
   /* Constants */
 
   /* Colours */
-  --font-color: #5d4b8a;
+  /* --font-color: #5d4b8a; */
   /* --font-color: #786d93; nicer, less accessible*/
+  --font-color: #363636;
+
   --color-dark: #424040;
   --color-light: #ffffff;
   --color-white: #ffffff;
@@ -17,23 +19,26 @@
 
 }
 
-.all-fonts {
-}
 
 html {
-  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
- /* -- CHANGES TO THEME CSS OVERWRITTEN -- */ 
-
-.header-filter::before {
-  background-color: rgba(0, 16BAC50, 0, 0.4) !important;
-}
-
-.page-header {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--font-color);
+  text-align: left;
+  background-color: #fafafa;
 }
 
 p {
@@ -41,6 +46,71 @@ p {
   color: #363636;
 }
 
+/* Navigation */
+
+
+.navbar {
+  /* position: relative; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  flex-direction: row;
+  background-color: transparent;
+  padding-top: 25px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-filter {
+  position: relative;
+  background-image: url(../img/backround-neon-sign-optimised-3000.jpg) !important;
+}
+
+.header-filter:before,
+.header-filter:after {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  left: 0;
+  top: 0;
+  content: "";
+}
+
+.header-filter::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-filter .container {
+  z-index: 2;
+  position: relative;
+}
+
+.page-header {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+}
 .section {
     padding: 30px 0px;
 }
@@ -60,6 +130,7 @@ p.description {
 
 a {
   color: #7040aa;
+  text-decoration: none;
 }
 #ichat{
     color: #00bcd4;
