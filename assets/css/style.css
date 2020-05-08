@@ -17,6 +17,7 @@
   --color-tertiary: #1b065e; /*blue*/
   --color-highlight: #16BAC5; /*teal*/
 
+  --sidebar-width: 240px;
 }
 
 
@@ -41,17 +42,37 @@ body {
   background-color: #fafafa;
 }
 
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 p {
   font-size: 16px;
   color: #363636;
 }
 
+.header-page-sidebar-container {
+  display: flex;
+}
+
+.central-content {
+  padding: var(--page-padding);
+  padding-top: 90px;
+}
+
+
+
 /* Navigation */
 
 
-.navbar {
+.nav-container {
   /* position: relative; */
-  position: fixed;
+  /* position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -63,16 +84,120 @@ p {
   padding: 0.5rem 1rem;
   flex-direction: row;
   background-color: transparent;
-  padding-top: 25px;
+  padding-top: 25px; */
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.navbar .container {
+.navbar-logo-top {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  color: black;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--page-padding);
+  position: fixed;
+  width: 100vw;
+  /* width: 100%; */
+  /* z-index: -1; */
+  height: var(--sidebar-height); /*50px*/
+}
+
+.sidebar {
+  /* background-color: var(--color-black); */
+  /* background-color: transparent; */
+  color: var(--color-white);
+  display: inline-block;
+  width: var(--sidebar-width);
+  position: fixed;
+  top: 0;
+  transition: transform ease var(--hover-transition-time);
+  z-index: 700;
+}
+
+/* .nav-container .container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+} */
+.sidebar-hamburger-image {
+  --size: 25px;
+  padding-top: 2px;
+  width: var(--size);
+  height: var(--size);
+  display: inline-block;
 }
 
+/* .sidebar-logo {
+  --size: 35px;
+  width: var(--size);
+  height: var(--size);
+} */
+
+.expanded-sidebar-container {
+  height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.close-arrow-image {
+  float: right;
+  padding: var(--page-padding);
+}
+
+
+.sidebar-group.sidebar-group-padding-top {
+  padding-top: 40px;
+}
+
+.sidebar-group {
+  margin: var(--page-padding 0);
+  background-color: var(--color-black);
+}
+
+
+.sidebar:not(:focus-within) {
+  transform: translate(calc(var(--sidebar-width) - 40px));
+  /* transform: translate(200px); */
+  /* TODO length of icon and of margin not 190 */
+}
+
+.sidebar:focus-within > div.sidebar-container > a.sidebar-header > div.hamburger-image {
+  display: none
+}
+
+
+/* 
+.sidebar-group h2 {
+  margin-top: 0;
+  color: var(--color-grey);
+  font-size: var(--font-size);
+  text-transform: uppercase;
+  padding-left: var(--page-padding);
+}
+
+.sidebar-group a {
+  display: block;
+  padding: var(--half-page-padding) var(--page-padding);
+  color: var(--color-white);
+  transition: background-color var(--hover-transition-time);
+}
+
+.sidebar-group a:hover {
+  background-color: var(--color-light-black);
+  color: pink;
+}
+ */
+
+/* Header */
 .header-filter {
   position: relative;
   background-image: url(../img/backround-neon-sign-optimised-3000.jpg) !important;
@@ -126,7 +251,6 @@ li.card,
 p.description {
   color: #363636;
 }
-
 
 a {
   color: #7040aa;
