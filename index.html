@@ -45,8 +45,8 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
     />
     <!-- Material Kit CSS -->
-    <!-- <link href="/assets/css/material-kit.css" rel="stylesheet" /> -->
-    <!-- <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" /> -->
+    <!-- <link href="/assets/css/material-kit.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" /> -->
     <!-- DeeSign Styles -->
     <link
       rel="stylesheet"
@@ -691,13 +691,14 @@
 
         <!-- Start of Nav and Top Menu -->
         <nav class="nav-container">
-          <div class="navbar-logo-top">
-            <a class="navbar-brand deesign-font" href="top">DeeSign. </a>
+          <div class="nav-top-container">
+            <a class="nav-logo deesign-font" href="#top">DeeSign. </a>
           </div>
 
           <div class="sidebar">
             <div class="sidebar-container">
               <a class="sidebar-header" href="javascript:">
+                <!-- #TODO make hamburger and close arrow svgs -->
                 <div class="hamburger-image">
                   <img
                     src="/assets/img/hamburger-light.png"
@@ -717,8 +718,8 @@
                   </div>
                 </div>
 
-                <div class="sidebar-group sidebar-group-padding-top">
-                  <ul class="navbar-nav ml-auto">
+                <div class="sidebar-group sidebar-group-main-menu">
+                  <ul class="sidebar-list-container">
                     <!-- <li class="dropdown nav-item"> -->
                     <!--   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> DeeSign.</a> -->
                     <!--   <div class="dropdown-menu dropdown-with-icons"> -->
@@ -730,31 +731,31 @@
                     <!--     </a> -->
                     <!--   </div> -->
                     <!-- </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="#top">
+                    <li class="sidebar-li-item">
+                      <a class="sidebar-link" href="#top">
                         <i class="material-icons">home</i> DeeSign
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#pricing" id="pricing-icon">
+                    <li class="sidebar-li-item">
+                      <a class="sidebar-link" href="#pricing" id="pricing-icon">
                         <i class="fa fa-pound-sign"></i
                         ><i class="fa fa-pound-sign"></i> Offers
                         <!-- <i class="material-icons">dollar</i> Offers -->
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#about-us">
+                    <li class="sidebar-li-item">
+                      <a class="sidebar-link" href="#about-us">
                         <i class="material-icons">people</i> About Us
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contact">
+                    <li class="sidebar-li-item">
+                      <a class="sidebar-link" href="#contact">
                         <i class="material-icons">email</i> Contact
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="sidebar-li-item">
                       <a
-                        class="nav-link"
+                        class="sidebar-link"
                         rel="tooltip"
                         title=""
                         data-placement="bottom"
@@ -765,17 +766,46 @@
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>
-                    <!-- <li class="nav-item"> -->
-                    <!--   <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook"> -->
+                    <!-- <li class="sidebar-li-item"> -->
+                    <!--   <a class="sidebar-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook"> -->
                     <!--     <i class="fa fa-facebook-square"></i> -->
                     <!--   </a> -->
                     <!-- </li> -->
-                    <!-- <li class="nav-item"> -->
-                    <!--   <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram"> -->
+                    <!-- <li class="sidebar-li-item"> -->
+                    <!--   <a class="sidebar-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram"> -->
                     <!--     <i class="fa fa-instagram"></i> -->
                     <!--   </a> -->
                     <!-- </li> -->
                   </ul>
+                </div>
+
+                <div class="sidebar-footer">
+                  <ul>
+                    <li>
+                      <a class="sidebar-footer" href="#">
+                        Terms
+                      </a>
+                    </li>
+                    <li>
+                      <a class="sidebar-footer" href="#">
+                        Privacy
+                      </a>
+                    </li>
+                    <li>
+                      <a class="sidebar-footer" href="#">
+                        Cookies
+                      </a>
+                    </li>
+                    <li>
+                      <a class="sidebar-footer" href="#">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="sidebar-copyright">
+                    <a href="#" target="_blank">Copyright info</a>
+                  </div>
                 </div>
               </div>
             </div>
