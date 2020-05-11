@@ -124,10 +124,6 @@ body > div > div > nav > div.nav-top-container > a {
   padding-left: 0px;
 }
 
-#pricing-icon i {
-  font-size: 14px;
-  font-weight: 900;
-}
 
 .sidebar-container {
   display: flex;
@@ -179,6 +175,10 @@ body > div > div > nav > div.nav-top-container > a {
   /* display: inline-block; */
 }
 
+.hamburger-image > img {
+  width: 32px;
+  padding-top: 5px;
+}
 /* .sidebar-logo {
   --size: 35px;
   width: var(--size);
@@ -191,7 +191,7 @@ body > div > div > nav > div.nav-top-container > a {
   display: flex;
   flex-direction: column;
   /* align-items: stretch; */
-  width: 200px;
+  width: 212px;
   justify-content: space-between;
   overflow: scroll;
 }
@@ -203,6 +203,7 @@ body > div > div > nav > div.nav-top-container > a {
 
 .close-arrow-image > img {
   padding-top: var(--line-padding);
+  width: 32px;
 }
 
 .sidebar-group.sidebar-group-main-menu {
@@ -232,15 +233,40 @@ li.sidebar-li-item {
   padding: var(--line-padding);
 }
 
+.sidebar-link {
+  color: rgb(85, 26, 139);
+}
+
+.material-icons {
+  margin-top: -7px;
+  top: 4px;
+  position: relative;
+  margin-right: 3px;
+}
+
+#pricing-icon i {
+  font-size: 17px;
+  font-weight: 900;
+}
+
+#pound-sign-r {
+  padding-right: 8px;
+}
+
+a#twitter-icon.sidebar-link {
+  font-size: 24px;
+  font-weight: 900;
+}
+
 .sidebar-footer {
   padding-top: 25vh;
 }
 
-/* .sidebar:not(:focus-within) {
+.sidebar:not(:focus-within) {
   transform: translate(calc(var(--sidebar-width) - 60px));
   /* transform: translate(200px); */
   /* TODO length of icon and of margin not 190 */
-} */
+}
 
 .sidebar:focus-within
   > div.sidebar-container
