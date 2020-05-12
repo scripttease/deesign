@@ -337,9 +337,9 @@ a#twitter-icon.sidebar-link {
   display: flex;
 }
 
-.header-filter-neon {
+/* .header-filter-neon {
   background-image: url(../img/backround-neon-sign-optimised-3000.jpg) !important;
-}
+} */
 
 div.header-intro p {
   color: var(--color-light);
@@ -351,6 +351,10 @@ div.header-intro p {
   font-weight: 400;
   /* font-family: 'RafaleRU', Helvetica, Arial; */
   font-family: Helvetica, "Roboto", Arial;
+  margin-top: 0.5rem;
+  line-height: 1.5em;
+  padding-left: calc(var(--page-padding) * 2);
+  padding-right: var(--page-padding);
 }
 
 span.emphasis {
@@ -365,6 +369,11 @@ h4#header-subtitle {
   /* text-align: center; */
   color: white;
   font-weight: bolder;
+  line-height: 1.5em;
+  padding-left: calc(var(--page-padding) * 2);
+  padding-right: var(--page-padding);
+  padding-top: var(--page-padding);
+  width: 75vw;
 }
 
 #header-material-icon-heart {
@@ -374,6 +383,7 @@ h4#header-subtitle {
 }
 
 #btn-header {
+  text-align: center;
   width: 180px;
   margin: 0 auto;
   display: block;
