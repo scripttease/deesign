@@ -111,7 +111,6 @@ p {
 }
 
 body > div > div > nav > div.nav-top-container > a {
-
 }
 .nav-logo.deesign-font {
   color: white !important;
@@ -123,7 +122,6 @@ body > div > div > nav > div.nav-top-container > a {
   padding: var(--line-padding);
   padding-left: 0px;
 }
-
 
 .sidebar-container {
   display: flex;
@@ -319,7 +317,7 @@ a#twitter-icon.sidebar-link {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.header-filter .container {
+.header-filter .header-container {
   z-index: 2;
   position: relative;
 }
@@ -368,12 +366,16 @@ span.emphasis {
 h4#header-subtitle {
   /* text-align: center; */
   color: white;
-  font-weight: bolder;
+  /* font-weight: bolder; */
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   line-height: 1.5em;
   padding-left: calc(var(--page-padding) * 2);
   padding-right: var(--page-padding);
   padding-top: var(--page-padding);
   width: 75vw;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  font-weight: 400;
 }
 
 #header-material-icon-heart {
@@ -395,3 +397,57 @@ h4#header-subtitle {
 }
 
 /* -- END HEADER -- */
+
+/* -- Main Page Content -- */
+
+.main-raised-card {
+  margin-top: -5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  position: relative;
+  z-index: 3;
+  padding: var(--page-padding);
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .main-container {
+    max-width: 540px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 2.25rem;
+  margin-top: 30px;
+  min-height: 32px;
+  color: #3c4858;
+  text-decoration: none;
+}
+
+.section .description {
+  color: #363636;
+  font-size: 1.0625rem;
+  line-height: 1.55em;
+  margin-bottom: 15px;
+}
