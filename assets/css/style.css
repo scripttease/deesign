@@ -399,7 +399,7 @@ h4#header-subtitle {
 
 /* -- Main Page Content -- */
 
-.main-raised-card {
+.main-raised {
   margin-top: -4rem;
   margin-left: 10px;
   margin-right: 10px;
@@ -462,21 +462,37 @@ h4#header-subtitle {
 }
 
 
-
-
-
-
-@media (min-width: 768px) {
-  .section-full-width {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-  }
-}
-
 .section-full-width {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+@media (min-width: 768px) {
+  .section-full-width {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    /* flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    This was col md 8, I prefer col md 10 */
+  }
+}
+
+.section-half-width {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: centre !important;
+}
+
+@media (min-width: 768px) {
+  .section-half-width {
+    flex: 0 0 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
 
 .heading {
   font-weight: 700;
@@ -572,6 +588,8 @@ h4#header-subtitle {
   line-height: 3.5;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  margin-top: -30px;
+  text-align: center;
 }
 
 .neon-text-container > span {
@@ -585,4 +603,28 @@ h4#header-subtitle {
 .neon-text-container > .off {
   color: rgba(46, 46, 46, 0.61);
   text-shadow: 7px 7px 5px rgba(0, 0, 0, 1);
+}
+
+ul.nav-tab-button-container {
+  margin: unset;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding: var(--page-padding);
+}
+
+.nav-btn {
+  background-color: var(--color-primary);
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(118, 30, 233, 0.6);
+  color: #fff;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+  color: #555;
+  transition: all .3s;
+  border-radius: 30px;
+  padding: 10px 15px;
 }
