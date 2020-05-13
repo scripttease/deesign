@@ -32,30 +32,24 @@ let re = /(#[a-z0-9]+)/;
 //   }
 // }
 
-
 navLink.forEach(link => {
-  link.addEventListener("click", function () {
-    swapActive(link);
-    let hrf = re.exec(link.href)[1];
-    console.log(hrf)
+  link.addEventListener("click", function(event) {
+    let showClass = "active-show"
 
-    let targetTabPane = document.querySelector(hrf)
-    console.log(targetTabPane)
+    // Reset all the classes so none are showing
+    navLink.forEach(link => link.classList.remove(showClass))
+    tabPane.forEach(link => link.classList.remove(showClass))
 
-    tabPane.forEach(pane => {
-      console.log('tabpaneforeach')
-      if ((pane.id == hrf) && (pane.classList.contains('active-show') !== true )) {
-        pane.classList.add('active-show')
-        console.log('add')
-      } else if ((pane.id !== hrf) && (pane.classList.contains('active-show') == true )){
-        pane.classList.remove('active-show')
-        console.log('remove')
-      } else {
-        console.log('sadtimes')
-      }
-    })
-    // let targetTabPane = document.querySelector(hrf)
-    // targetTabPane.classList.add('active-show')
+    // Get the id of the tab to show from the link
+    // let hrf = re.exec(link.href)[1];
+    let id = new URL(link).hash
+    
+    // Add the active class to the clicked link and tab
+    document.querySelector(id).classList.add(showClass)
+    link.classList.add(showClass)
+
+    // Prevent the browser from jumping to the id
+    event.preventDefault()
   });
 
 });
