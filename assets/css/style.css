@@ -681,8 +681,7 @@ ul.tab-pane-nav-container.tab-btn {
 }
 
 .tab-pane.active-show {
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .card {
@@ -750,6 +749,15 @@ ul.tab-pane-nav-container.tab-btn {
   color: #fff;
 }
 
+.card.bg-rose li {
+  color: white;
+  border-color: #ffffff4d;
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-right-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+}
+
 .card-title {
   margin-top: 0.625rem;
   color: #3c4858;
@@ -760,6 +768,11 @@ ul.tab-pane-nav-container.tab-btn {
   font-size: 3.3125rem;
   line-height: 1.15em;
 }
+
+.bg-rose .card-title {
+  color: white;
+}
+
 .card small {
   font-size: 0.5em;
 }
@@ -769,6 +782,15 @@ ul.tab-pane-nav-container.tab-btn {
   overflow: hidden;
   overflow-y: scroll;
   padding-left: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .btn {
