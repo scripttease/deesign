@@ -1,20 +1,10 @@
 <!--
-  new
   =========================================================
   * Website by Deesign, Copyright 2020
-  * Based on Material Kit by Creative Tim, Copyright below:
+  * Some aspects of this design are based on or inspired by the Material Design (https://material.io/design) style which has the following license: https://github.com/material-components/material-components-web/blob/master/LICENSE
+  * Icons are from Font Awesome who's license conditions can be found here: https://fontawesome.com/license
   =========================================================
-  * Material Kit - v2.0.6
-  =========================================================
-
-  * Product Page: https://www.creative-tim.com/product/material-kit
-  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-  Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
-
-
-  =========================================================
-
-  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -31,22 +21,8 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700|Material+Icons&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:400,700"
     />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
-    />
-    <!-- Material Kit CSS -->
-    <!-- <link href="/assets/css/material-kit.css" rel="stylesheet" />
-    <link href="assets/css/material-kit.css?v=2.0.6" rel="stylesheet" /> -->
     <!-- DeeSign Styles -->
     <link
       rel="stylesheet"
@@ -63,7 +39,177 @@
   </head>
 
   <body>
-    <!-- <main class="page" role="main"> -->
+    <!-- SVG Icons from Font Awesome -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="defs-only">
+      <symbol
+        id="heart"
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="heart"
+        role="img"
+        viewBox="0 0 512 512"
+      >
+        <title>heart icon</title>
+        <desc>solid heart icon</desc>
+        <path
+          fill="white"
+          d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+        ></path>
+      </symbol>
+
+      <symbol id="hand-heart" viewBox="0 0 576 512">
+        <path
+          fill="white"
+          d="M275.3 250.5c7 7.4 18.4 7.4 25.5 0l108.9-114.2c31.6-33.2 29.8-88.2-5.6-118.8-30.8-26.7-76.7-21.9-104.9 7.7L288 36.9l-11.1-11.6C248.7-4.4 202.8-9.2 172 17.5c-35.3 30.6-37.2 85.6-5.6 118.8l108.9 114.2zm290 77.6c-11.8-10.7-30.2-10-42.6 0L430.3 402c-11.3 9.1-25.4 14-40 14H272c-8.8 0-16-7.2-16-16s7.2-16 16-16h78.3c15.9 0 30.7-10.9 33.3-26.6 3.3-20-12.1-37.4-31.6-37.4H192c-27 0-53.1 9.3-74.1 26.3L71.4 384H16c-8.8 0-16 7.2-16 16v96c0 8.8 7.2 16 16 16h356.8c14.5 0 28.6-4.9 40-14L564 377c15.2-12.1 16.4-35.3 1.3-48.9z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="far"
+        data-icon="comments"
+        id="chat"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+      >
+        <path
+          fill="currentColor"
+          d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="tasks"
+        id="done"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="M139.61 35.5a12 12 0 0 0-17 0L58.93 98.81l-22.7-22.12a12 12 0 0 0-17 0L3.53 92.41a12 12 0 0 0 0 17l47.59 47.4a12.78 12.78 0 0 0 17.61 0l15.59-15.62L156.52 69a12.09 12.09 0 0 0 .09-17zm0 159.19a12 12 0 0 0-17 0l-63.68 63.72-22.7-22.1a12 12 0 0 0-17 0L3.53 252a12 12 0 0 0 0 17L51 316.5a12.77 12.77 0 0 0 17.6 0l15.7-15.69 72.2-72.22a12 12 0 0 0 .09-16.9zM64 368c-26.49 0-48.59 21.5-48.59 48S37.53 464 64 464a48 48 0 0 0 0-96zm432 16H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H208a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h288a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="fingerprint"
+        id="print"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="M256.12 245.96c-13.25 0-24 10.74-24 24 1.14 72.25-8.14 141.9-27.7 211.55-2.73 9.72 2.15 30.49 23.12 30.49 10.48 0 20.11-6.92 23.09-17.52 13.53-47.91 31.04-125.41 29.48-224.52.01-13.25-10.73-24-23.99-24zm-.86-81.73C194 164.16 151.25 211.3 152.1 265.32c.75 47.94-3.75 95.91-13.37 142.55-2.69 12.98 5.67 25.69 18.64 28.36 13.05 2.67 25.67-5.66 28.36-18.64 10.34-50.09 15.17-101.58 14.37-153.02-.41-25.95 19.92-52.49 54.45-52.34 31.31.47 57.15 25.34 57.62 55.47.77 48.05-2.81 96.33-10.61 143.55-2.17 13.06 6.69 25.42 19.76 27.58 19.97 3.33 26.81-15.1 27.58-19.77 8.28-50.03 12.06-101.21 11.27-152.11-.88-55.8-47.94-101.88-104.91-102.72zm-110.69-19.78c-10.3-8.34-25.37-6.8-33.76 3.48-25.62 31.5-39.39 71.28-38.75 112 .59 37.58-2.47 75.27-9.11 112.05-2.34 13.05 6.31 25.53 19.36 27.89 20.11 3.5 27.07-14.81 27.89-19.36 7.19-39.84 10.5-80.66 9.86-121.33-.47-29.88 9.2-57.88 28-80.97 8.35-10.28 6.79-25.39-3.49-33.76zm109.47-62.33c-15.41-.41-30.87 1.44-45.78 4.97-12.89 3.06-20.87 15.98-17.83 28.89 3.06 12.89 16 20.83 28.89 17.83 11.05-2.61 22.47-3.77 34-3.69 75.43 1.13 137.73 61.5 138.88 134.58.59 37.88-1.28 76.11-5.58 113.63-1.5 13.17 7.95 25.08 21.11 26.58 16.72 1.95 25.51-11.88 26.58-21.11a929.06 929.06 0 0 0 5.89-119.85c-1.56-98.75-85.07-180.33-186.16-181.83zm252.07 121.45c-2.86-12.92-15.51-21.2-28.61-18.27-12.94 2.86-21.12 15.66-18.26 28.61 4.71 21.41 4.91 37.41 4.7 61.6-.11 13.27 10.55 24.09 23.8 24.2h.2c13.17 0 23.89-10.61 24-23.8.18-22.18.4-44.11-5.83-72.34zm-40.12-90.72C417.29 43.46 337.6 1.29 252.81.02 183.02-.82 118.47 24.91 70.46 72.94 24.09 119.37-.9 181.04.14 246.65l-.12 21.47c-.39 13.25 10.03 24.31 23.28 24.69.23.02.48.02.72.02 12.92 0 23.59-10.3 23.97-23.3l.16-23.64c-.83-52.5 19.16-101.86 56.28-139 38.76-38.8 91.34-59.67 147.68-58.86 69.45 1.03 134.73 35.56 174.62 92.39 7.61 10.86 22.56 13.45 33.42 5.86 10.84-7.62 13.46-22.59 5.84-33.43z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fab"
+        data-icon="github"
+        id="github"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 496 512"
+      >
+        <path
+          fill="currentColor"
+          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fab"
+        data-icon="twitter"
+        id="twitter"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="home"
+        id="home"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 576 512"
+      >
+        <path
+          fill="currentColor"
+          d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="user-friends"
+        id="people"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 640 512"
+      >
+        <path
+          fill="currentColor"
+          d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="pound-sign"
+        id="pound"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+      >
+        <path
+          fill="currentColor"
+          d="M308 352h-45.495c-6.627 0-12 5.373-12 12v50.848H128V288h84c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-84v-63.556c0-32.266 24.562-57.086 61.792-57.086 23.658 0 45.878 11.505 57.652 18.849 5.151 3.213 11.888 2.051 15.688-2.685l28.493-35.513c4.233-5.276 3.279-13.005-2.119-17.081C273.124 54.56 236.576 32 187.931 32 106.026 32 48 84.742 48 157.961V224H20c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h28v128H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V364c0-6.627-5.373-12-12-12z"
+        ></path>
+      </symbol>
+
+      <symbol
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        data-icon="envelope"
+        id="mail"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <path
+          fill="currentColor"
+          d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+        ></path>
+      </symbol>
+    </svg>
 
     <div class="content-container-inc-footer">
       <div class="header-page-sidebar-container">
@@ -96,19 +242,21 @@
                 Your website is your advertisement, storefront, marketing
                 campaign, brand identity... So it makes sense to give it some
                 love.
-                <i class="material-icons" id="header-material-icon-heart"
-                  >favorite</i
-                >
+                <div class="icon baseline">
+                  <svg><use xlink:href="#heart" /></svg>
+                </div>
                 <br />Website design, hosting, maintenance, branding.
                 <br />Together we can craft the perfect digital solution.
               </h4>
               <br />
               <a href="#pricing" id="btn-header">
-                <i class="fas fa-hand-holding-heart"></i> Offers
-                <!-- <i class="material-icons">loyalty</i> Offers -->
+                <div class="icon baseline">
+                  <svg>
+                    <use xlink:href="#hand-heart" />
+                  </svg>
+                </div>
+                &nbsp Offers
               </a>
-              <!-- </div> -->
-              <!-- </div> -->
             </div>
           </div>
 
@@ -136,8 +284,8 @@
                 <div class="row">
                   <div class="col-in-row">
                     <div class="info">
-                      <div class="icon">
-                        <i id="ichat" class="material-icons">chat</i>
+                      <div class="icon baseline chat">
+                        <svg><use xlink:href="#chat" /></svg>
                       </div>
                       <h4 class="info-title">Free Consultation</h4>
                       <p>
@@ -152,8 +300,8 @@
                   </div>
                   <div class="col-in-row">
                     <div class="info">
-                      <div class="icon icon-success">
-                        <i id="itick" class="material-icons">verified_user</i>
+                      <div class="icon baseline done">
+                        <svg><use xlink:href="#done" /></svg>
                       </div>
                       <h4 class="info-title">Hassle Free</h4>
                       <p>
@@ -167,8 +315,8 @@
                   </div>
                   <div class="col-in-row">
                     <div class="info">
-                      <div class="icon icon-danger">
-                        <i id="iprint" class="material-icons">fingerprint</i>
+                      <div class="icon baseline print">
+                        <svg><use xlink:href="#print" /></svg>
                       </div>
                       <h4 class="info-title">Bespoke Solutions</h4>
                       <p>
@@ -203,7 +351,6 @@
 
           <!-- PRICING BANNER SECTION -->
           <div class="banner-container">
-            <!-- <div class="section-container"> -->
             <a name="pricing"></a>
             <div class="text-center">
               <div class="neon-text-container banner">
@@ -327,7 +474,7 @@
                         </div>
                       </div>
                     </div>
-                    <!-- card four -->
+                    <!-- card three -->
                     <div class="col-in-row">
                       <div class="card card-plain">
                         <div class="card-body">
@@ -417,7 +564,7 @@
                         </div>
                       </div>
                     </div>
-                    <!-- card four -->
+                    <!-- card three -->
                     <div class="col-in-row">
                       <div class="card ard-pricing card-plain">
                         <div class="card-body">
@@ -531,14 +678,20 @@
                               href="https://github.com/scripttease"
                               target="_blank"
                               class="icon-social-media-small"
-                              ><i class="fa fa-github"></i
-                            ></a>
+                            >
+                              <div class="icon baseline github">
+                                <svg><use xlink:href="#github" /></svg>
+                              </div>
+                            </a>
                             <a
                               href="https://twitter.com/scriptteaser"
-                              target="blank"
+                              target="_blank"
                               class="icon-social-media-small"
-                              ><i class="fa fa-twitter"></i
-                            ></a>
+                            >
+                              <div class="icon baseline twitter">
+                                <svg><use xlink:href="#twitter" /></svg>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -579,27 +732,31 @@
                               href="https://github.com/lpil"
                               target="_blank"
                               class="icon-social-media-small"
-                              ><i class="fa fa-github"></i
-                            ></a>
+                            >
+                              <div class="icon baseline github">
+                                <svg><use xlink:href="#github" /></svg>
+                              </div>
+                            </a>
                             <a
                               href="https://twitter.com/louispilfold?lang=en"
                               target="_blank"
                               class="icon-social-media-small"
-                              ><i class="fa fa-twitter"></i
-                            ></a>
+                            >
+                              <div class="icon baseline twitter">
+                                <svg><use xlink:href="#twitter" /></svg>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
           <!-- END ABOUT RAISED -->
           <!-- END ABOUT TEAM SECTION -->
-
 
           <!-- portfolio SECTION -->
           <!-- portfolio BANNER -->
@@ -622,18 +779,27 @@
                     <div class="col-in-row-2">
                       <div class="section">
                         <div class="card card-plain">
-                            <a href="https://theappletreelondon.com" target="_blank">
-                          <img
-                            src="../assets/img/mockup.png"
-                            alt="Desktop, laptop, tablet and phone screens with different images on them that show various web pages for The Apple Tree pub"
-                            class="img"
+                          <a
+                            href="https://theappletreelondon.com"
+                            target="_blank"
+                          >
+                            <img
+                              src="../assets/img/mockup.png"
+                              alt="Desktop, laptop, tablet and phone screens with different images on them that show various web pages for The Apple Tree pub"
+                              class="img"
                           /></a>
                           <h4 class="card-title">The Apple Tree</h4>
                           <div class="card-body">
                             <p class="card-description">
-                              The Apple Tree website is a multi-page CMS site, visually designed and styled with the pub's target Queeer and Sex Positive Clientele in mind. The site encorporates a Collins booking app,subscriber and contact forms, and is fully customisable by the client, built on the WordPress platform.
+                              The Apple Tree website is a multi-page CMS site,
+                              visually designed and styled with the pub's target
+                              Queeer and Sex Positive Clientele in mind. The
+                              site encorporates a Collins booking app,subscriber
+                              and contact forms, and is fully customisable by
+                              the client, built on the WordPress platform.
                               <br /><small
-                                >(Check out the beautiful rainbow stats in the footer!)</small
+                                >(Check out the beautiful rainbow stats in the
+                                footer!)</small
                               >
                             </p>
                           </div>
@@ -651,11 +817,13 @@
                           <h4 class="card-title">Your Stunning Website!</h4>
                           <div class="card-body">
                             <p class="card-description">
-                              You are moments away from making your website dreams into a reality. Yours could be the next fabulous website that we help to design and create. 
-                              <a
-                                href="#contact"
-                                >Get in touch</a
-                              > for a query or quote, to see just how easily a modern, professional website could be yours.<br />
+                              You are moments away from making your website
+                              dreams into a reality. Yours could be the next
+                              fabulous website that we help to design and
+                              create.
+                              <a href="#contact">Get in touch</a> for a query or
+                              quote, to see just how easily a modern,
+                              professional website could be yours.<br />
                               <small>(You've got this!)</small>
                             </p>
                           </div>
@@ -664,13 +832,11 @@
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
           <!-- END portfolio RAISED-->
           <!-- END portfolio SECTION -->
-
 
           <!-- CONTACT MORE INFORMATION SECTION -->
           <!-- CONTACT BANNER -->
@@ -702,71 +868,12 @@
                       the website soon, but if you can give me a quick overview
                       of what you want, I can reply to you with all the
                       information you need to get started straight away.
-                      <br>
+                      <br />
                       <a href="mailto:info@deesign.site" target="_blank">
-                        email us</a>
+                        email us</a
+                      >
                       <span class="highlight-text">info@deesign.site</span>
                     </h4>
-
-                    <!-- <form
-                      class="contact-form"
-                      action="https://formspree.io/xgeknqgy"
-                      method="POST"
-                    >
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="bmd-label-floating">Your Name</label>
-                            <input
-                              type="text"
-                              name="name"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <label class="bmd-label-floating">Your Email</label>
-                            <input
-                              type="email"
-                              name="_replyto"
-                              class="form-control"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleMessage" class="bmd-label-floating"
-                          >Your Message</label
-                        >
-                        <!-- <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea> -->
-
-                        <!-- <textarea
-                          name="message"
-                          class="form-control"
-                          rows="4"
-                          id="exampleMessage"
-                        ></textarea>
-                      </div>
-                      <input
-                        type="hidden"
-                        name="_subject"
-                        value="DeeSign More Info/Contact Request Form"
-                      />
-                      <input type="text" name="_gotcha" id="got-cha" />
-                      <div class="row">
-                        <div class="col-in-row ml-auto mr-auto text-center">
-                          <button
-                            class="btn btn-primary btn-raised btn-tertiary"
-                            type="submit"
-                            value="Send"
-                          >
-                            Send Message
-                          </button>
-                        </div>
-                      </div>
-                    </form> -->
-
                   </div>
                 </div>
               </div>
@@ -788,11 +895,9 @@
           <div class="sidebar">
             <div class="sidebar-container">
               <a class="sidebar-header" href="javascript:">
-                <!-- #TODO make hamburger and close arrow svgs -->
                 <div class="hamburger-image">
                   <img src="/assets/img/hamburger.svg" alt="hamburger menu" />
                 </div>
-                <!-- <h2>logoName</h2> -->
               </a>
 
               <div class="expanded-sidebar-container">
@@ -807,38 +912,36 @@
 
                 <div class="sidebar-group sidebar-group-main-menu">
                   <ul class="sidebar-list-container">
-                    <!-- <li class="dropdown nav-item"> -->
-                    <!--   <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"> DeeSign.</a> -->
-                    <!--   <div class="dropdown-menu dropdown-with-icons"> -->
-                    <!--     <a href="/" class="dropdown-item"> -->
-                    <!--       <i class="material-icons">layers</i> All Components -->
-                    <!--     </a> -->
-                    <!--     <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item"> -->
-                    <!--       <i class="material-icons">content_paste</i> Documentation -->
-                    <!--     </a> -->
-                    <!--   </div> -->
-                    <!-- </li> -->
                     <li class="sidebar-li-item">
                       <a class="sidebar-link" href="#top">
-                        <i class="material-icons">home</i> DeeSign
+                        <div class="icon baseline">
+                          <svg><use xlink:href="#home" /></svg>
+                        </div>
+                        DeeSign
                       </a>
                     </li>
                     <li class="sidebar-li-item">
                       <a class="sidebar-link" href="#pricing" id="pricing-icon">
-                        <i class="fa fa-pound-sign"></i
-                        ><i class="fa fa-pound-sign" id="pound-sign-r"></i>
+                        <div class="icon baseline">
+                          <svg><use xlink:href="#pound" /></svg>
+                        </div>
                         Offers
-                        <!-- <i class="material-icons">dollar</i> Offers -->
                       </a>
                     </li>
                     <li class="sidebar-li-item">
                       <a class="sidebar-link" href="#about-us">
-                        <i class="material-icons">people</i> About Us
+                        <div class="icon baseline">
+                          <svg><use xlink:href="#people" /></svg>
+                        </div>
+                        About Us
                       </a>
                     </li>
                     <li class="sidebar-li-item">
                       <a class="sidebar-link" href="#contact">
-                        <i class="material-icons">email</i> Contact
+                        <div class="icon baseline">
+                          <svg><use xlink:href="#mail" /></svg>
+                        </div>
+                        Contact
                       </a>
                     </li>
                     <li class="sidebar-li-item">
@@ -855,42 +958,11 @@
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>
-                    <!-- <li class="sidebar-li-item"> -->
-                    <!--   <a class="sidebar-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook"> -->
-                    <!--     <i class="fa fa-facebook-square"></i> -->
-                    <!--   </a> -->
-                    <!-- </li> -->
-                    <!-- <li class="sidebar-li-item"> -->
-                    <!--   <a class="sidebar-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram"> -->
-                    <!--     <i class="fa fa-instagram"></i> -->
-                    <!--   </a> -->
-                    <!-- </li> -->
                   </ul>
                 </div>
 
                 <div class="sidebar-footer">
-                  <ul>
-                    <!-- <li>
-                      <a class="sidebar-footer" href="#">
-                        Terms
-                      </a>
-                    </li>
-                    <li>
-                      <a class="sidebar-footer" href="#">
-                        Privacy
-                      </a>
-                    </li>
-                    <li>
-                      <a class="sidebar-footer" href="#">
-                        Cookies
-                      </a>
-                    </li>
-                    <li>
-                      <a class="sidebar-footer" href="#">
-                        Contact
-                      </a>
-                    </li> -->
-                  </ul>
+                  <ul></ul>
 
                   <div class="sidebar-copyright">
                     <a href="#bottom">Copyright info</a>
@@ -911,36 +983,14 @@
             <script>
               document.write(new Date().getFullYear());
             </script>
-            , made with <i class="material-icons">favorite</i> by Al Dee.
-
+            Made by Al Dee at Deesign.
           </div>
         </div>
       </footer>
     </div>
 
-    <!-- </main> -->
-    <!--   My JS Files   -->
-    <!-- <script src="assets/js/neon.js" type="text/javascript"></script> -->
+    <!--   JS Files   -->
     <script src="assets/js/neonfunc.js" type="text/javascript"></script>
     <script src="assets/js/tabpane.js" type="text/javascript"></script>
-    <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
-    <!-- <script src="assets/js/core/popper.min.js" type="text/javascript"></script> -->
-    <!-- <script
-      src="assets/js/core/bootstrap-material-design.min.js"
-      type="text/javascript"
-    ></script> -->
-    <!-- <script src="assets/js/plugins/moment.min.js"></script> -->
-    <!-- Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <!-- <script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script> -->
-    <!-- Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <!-- <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script> -->
-    <!-- Google Maps Plugin -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-    <!-- #TODO decide if I want the parallax effect or I want to replicate with css due to increased payload -->
-    <!-- <script src="assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script></body> -->
   </body>
 </html>

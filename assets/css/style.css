@@ -237,11 +237,42 @@ li.sidebar-li-item {
   color: rgb(85, 26, 139);
 }
 
-.material-icons {
-  margin-top: -7px;
-  top: 4px;
-  position: relative;
-  margin-right: 3px;
+.defs-only {
+  display: none;
+}
+
+.icon {
+  /* width: 20px;
+  height: 20px; */
+  z-index: 5;
+    display: inline-flex;
+    align-self: center;
+}
+
+.icon svg, .icon img {
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+}
+
+.icon.baseline svg, .icon img {
+    top: .125em;
+    position: relative;
+}
+
+.icon.baseline.chat svg  {
+  font-size: 3.85rem;
+  color: var(--color-tertiary);
+}
+
+.icon.baseline.done svg  {
+  font-size: 3.85rem;
+  color: var(--color-highlight);
+}
+
+.icon.baseline.print svg  {
+  font-size: 3.85rem;
+  color: var(--color-secondary);
 }
 
 .icon-social-media-small {
