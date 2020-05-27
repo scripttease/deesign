@@ -1,22 +1,6 @@
-//array from html collection
-// arrayMe :: HTMLCollection -> Array
-function arrayMe(htmlColl) {
-  return Array.prototype.slice.call(htmlColl);
-}
-
-
 let active = document.querySelectorAll('active-show');
 let navLink = document.querySelectorAll('.nav-link');
 let tabPane = document.querySelectorAll('.tab-pane');
-
-
-function swapActive(elem) {
-  if (elem.classList.contains('active-show')) {
-    elem.classList.remove('active-show')
-  } else {
-    elem.classList.add('active-show')
-  }
-};
 
 let re = /(#[a-z0-9]+)/;
 
