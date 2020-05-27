@@ -69,6 +69,7 @@ p {
 }
 
 .central-content {
+  width: 100vw;
 }
 
 /* Navigation */
@@ -511,7 +512,14 @@ h4#header-subtitle {
 }
 @media (min-width: 1200px) {
   .section-container {
-    max-width: 1140px;
+    max-width: 85vw;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (min-width: 1920px) {
+  .section-container {
+    max-width: 75vw;
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -803,7 +811,7 @@ ul.tab-pane-nav-container.tab-btn {
 }
 
 .card li {
-  color: #999;
+  color: var(--font-color)
   text-align: center;
   padding: 12px 0;
   padding-top: 12px;
@@ -816,7 +824,7 @@ ul.tab-pane-nav-container.tab-btn {
   border-bottom-color: rgba(153, 153, 153, 0.3);
 }
 
-.card.bg-rose {
+.card.bk-primary {
   background: linear-gradient(
     60deg,
     var(--color-primary),
@@ -826,7 +834,7 @@ ul.tab-pane-nav-container.tab-btn {
   color: #fff;
 }
 
-.card.bg-rose li {
+.card.bk-primary li {
   color: white;
   border-color: #ffffff4d;
   border-top-color: rgba(255, 255, 255, 0.3);
@@ -850,7 +858,7 @@ h4.card-title {
   font-size: 1.125rem;
 }
 
-.bg-rose .card-title {
+.bk-primary .card-title {
   color: white;
 }
 
@@ -863,6 +871,7 @@ h4.card-title {
   overflow: hidden;
   overflow-y: scroll;
   padding-left: 0;
+  padding-right: 1em;
 }
 
 ::-webkit-scrollbar {
